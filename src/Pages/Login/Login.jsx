@@ -1,9 +1,9 @@
-import emailicon from "../assets/email.svg";
-import Eyesicon from "../assets/eye-closed.svg";
-import passwordicon from "../assets/Group 12.svg";
-import loginphoto from "../assets/loginFormphoto.svg";
-import bgimage from "../assets/background logo in login.svg";
-import logo from "../assets/logo in login.svg";
+import emailicon from "../../assets/email.svg";
+import Eyesicon from "../../assets/eye-closed.svg";
+import passwordicon from "../../assets/Group 12.svg";
+import loginphoto from "../../assets/loginFormphoto.svg";
+import bgimage from "../../assets/background logo in login.svg";
+import logo from "../../assets/logo in login.svg";
 const Login = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-8 h-screen">

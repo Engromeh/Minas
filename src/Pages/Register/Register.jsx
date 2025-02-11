@@ -1,9 +1,9 @@
-import emailicon from "../assets/email.svg";
-import Eyesicon from "../assets/eye-closed.svg";
-import passwordicon from "../assets/Group 12.svg";
-import bgimagerehister from "../assets/rgisterphoto.svg";
-import logo from "../assets/logo in login.svg";
-import registerfromlogo from "../assets/registerformss.svg";
+import emailicon from "../../assets/email.svg";
+import Eyesicon from "../../assets/eye-closed.svg";
+import passwordicon from "../../assets/Group 12.svg";
+import bgimagerehister from "../../assets/rgisterphoto.svg";
+import logo from "../../assets/logo in login.svg";
+import registerfromlogo from "../../assets/registerformss.svg";
 
 const Register = () => {
   return (

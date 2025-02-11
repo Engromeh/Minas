@@ -1,8 +1,8 @@
-import React from 'react';
-import celender from "../assets/calendardashbord.svg";
-import accspt from "../assets/tick.svg";
-import celnseld from "../assets/cancelled.svg";
-import doller from "../assets/dollar.svg";
+import React from "react";
+import celender from "../../assets/calendardashbord.svg";
+import accspt from "../../assets/tick.svg";
+import celnseld from "../../assets/cancelled.svg";
+import doller from "../../assets/dollar.svg";
 
 const Statistics = () => {
   return (
