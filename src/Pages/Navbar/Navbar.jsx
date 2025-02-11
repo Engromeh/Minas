@@ -3,7 +3,7 @@ import hend from "../../assets/handinnav bar.svg";
 
 const Navbar = () => {
   return (
-    <nav className="bg-white dark:bg-gray-800 shadow-md w-full h-16 flex items-center justify-between rounded-md">
+    <nav className="bg-white dark:bg-gray-800 shadow-md w-full h-16 flex items-center justify-between rounded-md p-2 " style={{marginRight:"2%"}}>
       <div className="flex items-center space-x-3">
         <img src={hend} className="h-8" alt="Logo" />
         <span className="text-2xl font-semibold dark:text-white">

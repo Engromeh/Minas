@@ -24,13 +24,14 @@ const UserInfo = () => {
     }
   };
   return (
-    <div className="h-screen flex flex-col bg-white shadow-lg rounded-2xl p-6 w-full justify-between">
-      <div className="flex justify-between items-center">
-        <h2 className="text-lg font-semibold">معلومات المستخدم</h2>
-        <button className="p-2 bg-gray-100 rounded-full hover:bg-gray-200">
-          <img src={notification} alt="Notification" />
-        </button>
-      </div>
+    <div className="bg-white shadow-md rounded-lg p-4 w-full  h-Screen flex flex-col justify-between">
+    <div className="flex justify-between items-center">
+      <h2 className="text-lg font-semibold">معلومات المستخدم</h2>
+      <button className="p-2 bg-gray-100 rounded-full hover:bg-gray-200">
+        <img src={notification} alt="Notification" />
+      </button>
+    </div>
+
 
       <div className="flex flex-col items-center mt-4">
         {!showForm ? (
@@ -151,13 +152,13 @@ const UserInfo = () => {
           View All
         </a>
       </div>
-      <div className="mt-4 bg-gray-100 p-4 rounded-lg">
-        <div className="flex mt-3">
+      <div className="mt-4 bg-gray-100 p-3 rounded-lg">
+        <div className="flex">
           <button
-            className={`px-4 py-1 w-1/2 transition-colors ${
+            className={`w-1/2 px-4 py-2 transition ${
               activeTab === "upcoming"
                 ? "bg-blue-900 text-white"
-                : "bg-gray-200 text-gray-700"
+                : "bg-gray-300 text-gray-700"
             } rounded-l-md`}
             onClick={() => setActiveTab("upcoming")}
           >
@@ -165,16 +166,16 @@ const UserInfo = () => {
           </button>
 
           <button
-            className={`px-4 py-1 w-1/2 transition-colors ${
+            className={`w-1/2 px-4 py-2 transition ${
               activeTab === "previous"
                 ? "bg-blue-900 text-white"
-                : "bg-gray-200 text-gray-700"
+                : "bg-gray-300 text-gray-700"
             } rounded-r-md`}
             onClick={() => setActiveTab("previous")}
           >
             الرحلات السابقة
           </button>
-        </div>
+      </div>
         <div className="mt-3">
           <div className="border-b p-4 flex justify-between items-center">
             <div className="flex flex-col items-start">
@@ -182,20 +183,20 @@ const UserInfo = () => {
               <p className="font-bold">NYC</p>
               <p className="text-[#0084FF] text-sm font-bold">22:30</p>
             </div>
-            <img src={fightgo} alt="Flight Go" />
+            <img src={fightgo} alt="Flight Go" className="w-24 h-24" />
             <div className="flex flex-col items-end">
               <p className="font-bold">CHS</p>
               <p className="text-[#0084FF] text-sm font-bold">23:45</p>
             </div>
           </div>
           <img src={line} className="w-full my-2 opacity-40" alt="divider" />
-          <div className="mt-2 p-4 flex justify-between items-center">
+          <div className="mt-2  flex justify-between items-center">
             <div className="flex flex-col items-start">
               <p className="text-gray-500 text-sm">Fri 15 Dec, 2023</p>
               <p className="font-bold">CHS</p>
               <p className="text-[#0084FF] text-sm font-bold">08:30</p>
             </div>
-            <img src={fightback} alt="Flight Back" />
+            <img src={fightback} alt="Flight Back" className="w-24 h-24" />
             <div className="flex flex-col items-end">
               <p className="font-bold">NYC</p>
               <p className="text-[#0084FF] text-sm font-bold">11:45</p>
