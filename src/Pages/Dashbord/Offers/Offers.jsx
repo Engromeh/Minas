@@ -1,36 +1,36 @@
-import React from 'react'
+import React from "react";
 import cardlogo1 from "../../../assets/Cardlogo1.svg";
 import cardlogo2 from "../../../assets/cardlogo2.svg";
 const Offers = () => {
-    const flights = [
-        {
-          id: 1,
-          airline: "United Airlines",
-          logo: cardlogo1,
-          from: "NYC",
-          to: "CHS",
-          departure: "22:30",
-          arrival: "23:45",
-          duration: "1H - 15M",
-          price: "$300",
-        },
-        {
-          id: 2,
-          airline: "Delta Airlines",
-          logo: cardlogo2,
-          from: "NYC",
-          to: "CHS",
-          departure: "22:30",
-          arrival: "23:45",
-          duration: "1H - 15M",
-          price: "$300",
-        },
-      ];
-      const repeatedFlights = Array(2).fill(flights).flat();
+  const flights = [
+    {
+      id: 1,
+      airline: "United Airlines",
+      logo: cardlogo1,
+      from: "NYC",
+      to: "CHS",
+      departure: "22:30",
+      arrival: "23:45",
+      duration: "1H - 15M",
+      price: "$300",
+    },
+    {
+      id: 2,
+      airline: "Delta Airlines",
+      logo: cardlogo2,
+      from: "NYC",
+      to: "CHS",
+      departure: "22:30",
+      arrival: "23:45",
+      duration: "1H - 15M",
+      price: "$300",
+    },
+  ];
+  const repeatedFlights = Array(2).fill(flights).flat();
 
   return (
     <>
-        <h2 className="text-xl font-bold mb-4 text-left" >العروض الحالية</h2>
+      <h2 className="text-xl font-bold mb-4 text-left">العروض الحالية</h2>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
         {repeatedFlights.map((flight, index) =>
           index % 2 === 0 ? (
@@ -126,8 +126,7 @@ const Offers = () => {
         )}
       </div>
     </>
-  
-  )
-}
+  );
+};
 
-export default Offers
+export default Offers;

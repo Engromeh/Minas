@@ -12,7 +12,7 @@ const cardsData = [
   {
     title: "العضوية الذهبية",
     bgColor: "#F3B858",
-    textColor: "#03003E", 
+    textColor: "#03003E",
     sidebarImage: sidebarImage1,
     features: [
       "دعم VIP",
@@ -25,7 +25,7 @@ const cardsData = [
   {
     title: "العضوية الفضية",
     bgColor: "#A4A4A4",
-    textColor: "#000", 
+    textColor: "#000",
     sidebarImage: sidebarImage2,
     features: [
       "دعم على مدار الساعة",
@@ -38,7 +38,7 @@ const cardsData = [
   {
     title: "العضوية البلاتينية",
     bgColor: "#212D5E",
-    textColor: "#FFF", 
+    textColor: "#FFF",
     sidebarImage: sidebarImage3,
     features: [
       "استشارات فردية",
@@ -52,18 +52,17 @@ const cardsData = [
 
 const Member = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-6">      
-    {cardsData.map((card, index) => (
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-6">
+      {cardsData.map((card, index) => (
         <div
           key={index}
           className="relative p-6 border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
           style={{ backgroundColor: card.bgColor }}
-          
         >
           <img
             src={card.sidebarImage}
             alt="sidebar"
-            className="absolute top-0 right-0  object-cover " 
+            className="absolute top-0 right-0  object-cover "
           />
           <img src={logo} alt="photo" className="mb-2 relative z-10" />
 
@@ -78,7 +77,10 @@ const Member = () => {
           </div>
 
           {card.features.map((feature, idx) => (
-            <div key={idx} className="flex items-center gap-2 mb-2 text-right relative z-10">
+            <div
+              key={idx}
+              className="flex items-center gap-2 mb-2 text-right relative z-10"
+            >
               <div className="relative w-6 h-6">
                 <img src={circle} alt="circle" className="w-full h-full" />
                 <img

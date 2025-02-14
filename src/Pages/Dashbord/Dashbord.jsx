@@ -1,24 +1,25 @@
-import React from 'react'
-import Offers from './Offers/Offers'
-import Bookflight from './Bookflight/Bookflight.JSX'
+import React from "react";
+import Offers from "./Offers/Offers";
+import Bookflight from "./Bookflight/Bookflight.JSX";
+import MemberSpecial from "./MemberSpecial/MemberSpecial";
 
 const Dashbord = () => {
   return (
-    <div className='grid grid-rows-10 '>
-    <div className='md:row-span-6'>
-    <div className='grid grid-cols-10 '>
-    <div className='md:col-span-8'> <Bookflight />
-    </div>
-    <div className='md:col-span-2'> 
-    </div>
+    <div className="flex flex-col gap-4">
+      <div className="flex flex-col md:flex-row gap-4">
+        <div className="md:w-3/5 w-full">
+          <Bookflight />
         </div>
-    </div>
-    <div className='md:row-span-4'>
-    <Offers />
-    </div>
-   
-    </div>
-  )
-}
+        <div className="md:w-2/5 w-full">
+          <MemberSpecial />
+        </div>
+      </div>
 
-export default Dashbord
+      <div>
+        <Offers />
+      </div>
+    </div>
+  );
+};
+
+export default Dashbord;

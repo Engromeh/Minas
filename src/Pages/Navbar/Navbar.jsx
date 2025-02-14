@@ -3,7 +3,10 @@ import hend from "../../assets/handinnav bar.svg";
 
 const Navbar = () => {
   return (
-    <nav className="bg-white dark:bg-gray-800 shadow-md w-full h-16 flex items-center justify-between rounded-md p-2 " style={{marginRight:"2%"}}>
+    <nav
+      className="bg-white dark:bg-gray-800 shadow-md w-full h-16 flex flex-col md:flex-row items-center justify-between rounded-md p-2 space-y-2 md:space-y-0"
+      style={{ marginRight: "2%" }}
+    >
       <div className="flex items-center space-x-3">
         <img src={hend} className="h-8" alt="Logo" />
         <span className="text-2xl font-semibold dark:text-white">
@@ -11,11 +14,11 @@ const Navbar = () => {
         </span>
       </div>
 
-      <div className="hidden md:flex items-center relative">
+      <div className="flex items-center relative w-full md:w-auto">
         <input
           type="text"
-          placeholder="بحث عن رحلة..."
-          className="w-64 ps-10 px-4 py-2 border rounded-lg bg-gray-50 dark:bg-gray-700 dark:text-white"
+          placeholder="رقم الرحلة"
+          className="w-full md:w-64 ps-10 px-4 py-2 border rounded-lg bg-gray-50 dark:bg-gray-700 dark:text-white"
         />
         <svg
           className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500"
@@ -29,22 +32,6 @@ const Navbar = () => {
           />
         </svg>
       </div>
-
-      <button
-        className="md:hidden p-2 rounded-lg text-gray-500 dark:text-gray-400 focus:ring-2 focus:ring-gray-300"
-        onClick={() => {
-          document.getElementById("mobile-menu").classList.toggle("hidden");
-        }}
-      >
-        <svg
-          className="w-6 h-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
-        </svg>
-      </button>
     </nav>
   );
 };

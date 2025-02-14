@@ -6,7 +6,7 @@ import doller from "../../assets/dollar.svg";
 
 const Statistics = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
       <div className="bg-white p-4 rounded-lg shadow flex justify-between items-center">
         <div className="flex flex-col text-left">
           <h3 className="text-2xl font-bold text-[#09121E]">45</h3>

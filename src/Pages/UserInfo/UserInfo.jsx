@@ -24,14 +24,16 @@ const UserInfo = () => {
     }
   };
   return (
-    <div className="bg-white shadow-md rounded-lg p-4 w-full  h-Screen flex flex-col justify-between">
-    <div className="flex justify-between items-center">
-      <h2 className="text-lg font-semibold">معلومات المستخدم</h2>
-      <button className="p-2 bg-gray-100 rounded-full hover:bg-gray-200">
-        <img src={notification} alt="Notification" />
-      </button>
-    </div>
-
+    <div
+      className="bg-white shadow-md rounded-lg p-4 w-full  flex flex-col justify-between"
+      style={{ height: "auto" }}
+    >
+      <div className="flex justify-between items-center">
+        <h2 className="text-lg font-semibold">معلومات المستخدم</h2>
+        <button className="p-2 bg-gray-100 rounded-full hover:bg-gray-200">
+          <img src={notification} alt="Notification" />
+        </button>
+      </div>
 
       <div className="flex flex-col items-center mt-4">
         {!showForm ? (
@@ -175,7 +177,7 @@ const UserInfo = () => {
           >
             الرحلات السابقة
           </button>
-      </div>
+        </div>
         <div className="mt-3">
           <div className="border-b p-4 flex justify-between items-center">
             <div className="flex flex-col items-start">
