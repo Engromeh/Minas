@@ -36,7 +36,7 @@ const DepositForm = () => {
 
   return (
     <>
-      <h2 className="text-xl font-bold text-center mt-4" style={{ fontSize: "40px", fontWeight: "bold" }}>
+      <h2 className="text-xl font-bold text-center mt-4" style={{ fontSize: "42px", fontWeight: "bold" }}>
         إيداع الأموال
       </h2>
       <div className="max-w-2xl mx-auto p-6 bg-white shadow-md rounded-lg">
