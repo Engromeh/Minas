@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router-dom";
 import Layout from "./Layout/Layout";
 import Card from "./Pages/Card/Card";
 import DepositForm from "./Pages/DepositForm/DepositForm";
+import Member from "./Pages/Member/Member";
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
       <Route path="/register" element={<Register />} />
         <Route path="/" element={<Layout />} >
        <Route path="/Deposit" element={<DepositForm/>} />
+       <Route path="/Member" element={<Member/>} />
+
         <Route path="/card" element={<Card />} />
         </Route>
       </Routes>
