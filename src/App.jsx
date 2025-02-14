@@ -7,6 +7,7 @@ import Layout from "./Layout/Layout";
 import Card from "./Pages/Card/Card";
 import DepositForm from "./Pages/DepositForm/DepositForm";
 import Member from "./Pages/Member/Member";
+import ProblemsForm from "./Pages/ProblemsForm/ProblemsForm";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <Route path="/" element={<Layout />} >
        <Route path="/Deposit" element={<DepositForm/>} />
        <Route path="/Member" element={<Member/>} />
+       <Route path="/Problem" element={<ProblemsForm/>} />
+
 
         <Route path="/card" element={<Card />} />
         </Route>
