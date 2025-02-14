@@ -8,6 +8,7 @@ import Card from "./Pages/Card/Card";
 import DepositForm from "./Pages/DepositForm/DepositForm";
 import Member from "./Pages/Member/Member";
 import ProblemsForm from "./Pages/ProblemsForm/ProblemsForm";
+import Dashbord from "./Pages/Dashbord/Dashbord";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
        <Route path="/Deposit" element={<DepositForm/>} />
        <Route path="/Member" element={<Member/>} />
        <Route path="/Problem" element={<ProblemsForm/>} />
+       <Route path="/Dashbord" element={<Dashbord/>} />
+
 
 
         <Route path="/card" element={<Card />} />
