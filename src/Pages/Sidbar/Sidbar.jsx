@@ -103,15 +103,15 @@ to={"/Deposit"}                className="flex items-center p-2 text-gray-900 ro
               </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+               to={"/Problem"}
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-[#33BAE0] dark:hover:bg-gray-700 group"
               >
                 <img src={icone5} className="w-5 h-5" alt="Icon" />
                 <span className="ms-3 whitespace-nowrap text-white">
                   مقترح او مشكلة
                 </span>
-              </a>
+              </Link>
             </li>
           </ul>
 
