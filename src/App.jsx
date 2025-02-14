@@ -4,15 +4,18 @@ import Register from "./Pages/Register/Register";
 import { Route, Routes } from "react-router-dom";
 
 import Layout from "./Layout/Layout";
+import Card from "./Pages/Card/Card";
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Layout />} />
-
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+        <Route path="/" element={<Layout />} >
+       
+        <Route path="/card" element={<Card />} />
+        </Route>
       </Routes>
     </>
   );

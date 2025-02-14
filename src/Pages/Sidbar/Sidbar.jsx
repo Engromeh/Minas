@@ -8,6 +8,7 @@ import icone5 from "../../assets/Dashbordicon5.svg";
 import icone6 from "../../assets/Dashbordicon6.svg";
 import icone7 from "../../assets/Dashbordicon7.svg";
 import icone8 from "../../assets/Dashbordicon8.svg";
+import { Link } from "react-router-dom";
 
 const Sidbar = () => {
   return (
@@ -64,7 +65,9 @@ const Sidbar = () => {
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-[#33BAE0] dark:hover:bg-gray-700 group"
               >
                 <img src={icone1} className="w-5 h-5" alt="Icon" />
-                <span className="ms-3 text-white">لوحة التحكم</span>
+                <Link className="ms-3 text-white" to={""}>
+                  لوحة التحكم
+                </Link>
               </a>
             </li>
             <li>
@@ -90,15 +93,15 @@ const Sidbar = () => {
               </a>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to={"/card"}
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-[#33BAE0] dark:hover:bg-gray-700 group"
               >
                 <img src={icone4} className="w-5 h-5" alt="Icon" />
                 <span className="ms-3 whitespace-nowrap text-white">
                   العروض
                 </span>
-              </a>
+              </Link>
             </li>
             <li>
               <a

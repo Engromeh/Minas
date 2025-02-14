@@ -3,6 +3,7 @@ import Sidbar from "../Pages/Sidbar/Sidbar";
 import Navbar from "../Pages/Navbar/Navbar";
 import Statistics from "../Pages/Statistics/Statistics";
 import UserInfo from "../Pages/UserInfo/UserInfo";
+import { Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (
@@ -14,6 +15,8 @@ const Layout = () => {
       <div className="col-span-12 md:col-span-9 lg:col-span-7">
         <Navbar />
         <Statistics />
+        <Outlet />
+        
       </div>
 
       <aside className="col-span-12 md:col-span-3 lg:col-span-3 lg:ml-4  p-4 rounded-lg">
