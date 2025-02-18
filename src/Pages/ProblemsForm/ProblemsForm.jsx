@@ -4,67 +4,66 @@ const ProblemsForm = () => {
   return (
     <div>
       <h2
-        className="text-xl font-bold text-center mt-4"
-        style={{ fontSize: "40px", fontWeight: "bold" }}
+        className="titel-problem  font-bold text-center mt-4"
       >
         اكتب مقترحك او مشكلتك
       </h2>
-      <div className="max-w-2xl mx-auto p-6 bg-white rounded-lg">
+      <div className="Problems-Form max-w-2xl mx-auto p-6 bg-white rounded-lg">
         <div className="flex flex-col gap-4 mt-6">
-          <div className="grid grid-cols-2 gap-4 items-center">
-            <div className="flex flex-col">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-4 items-center">
+            <div className="flex flex-col w-full">
               <div className="mb-5">
-                <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white text-right bg-white-100">
+                <label className="label-form block mb-2 text-sm font-medium dark:text-white text-right">
                   الايميل
                 </label>
                 <input
-                  type="text"
+                  type="email"
                   placeholder="الايميل الخاص لك"
-                  className="bg-gray-50 text-right text-gray-900 text-sm rounded-lg focus:ring-0  block w-full p-2.5 dark:bg-gray-700 dark:text-white"
+                  className="input-problem text-right text-sm rounded-lg   block w-full p-2.5 dark:bg-gray-800 dark:text-white  "
                 />
               </div>
             </div>
 
-            <div className="flex flex-col">
+            <div className="flex flex-col w-full">
               <div className="mb-5">
-                <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white text-right">
+                <label className="label-form block mb-2 text-sm font-medium text-gray-900 dark:text-white text-right">
                   الاسم
                 </label>
                 <input
                   type="text"
                   placeholder="اسمك بالكامل"
-                  className="bg-gray-50 text-right text-gray-900 text-sm rounded-lg focus:ring-0  block w-full p-2.5 dark:bg-gray-700 dark:text-white"
+                  className="input-problem  text-right text-sm rounded-lg  block w-full p-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 "
                 />
               </div>
             </div>
           </div>
 
-          <div className="flex flex-col">
+          <div className="flex flex-col w-full">
             <div className="mb-5">
-              <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white text-right">
+              <label className="label-form block mb-2 text-sm font-medium  text-right">
                 عنوان الرسالة
               </label>
               <input
                 type="text"
                 placeholder="عنوان الرسالة"
-                className="bg-gray-50 text-right text-gray-900 text-sm rounded-lg focus:ring-0  block w-full p-2.5 dark:bg-gray-700 dark:text-white"
+                className="input-problem text-right  text-sm rounded-lg  w-full p-2.5"
               />
             </div>
           </div>
 
-          <div className="flex flex-col">
-            <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white text-right">
+          <div className="flex flex-col w-full">
+            <label className="label-form block mb-2 text-sm font-medium dark:text-white text-right">
               الرسالة
             </label>
             <textarea
               rows="4"
               placeholder="الرسالة"
-              className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg focus:ring-0  dark:bg-gray-700 dark:text-white text-right"
+              className="input-problem block p-2.5 w-full text-sm bg-white rounded-lg  text-right"
             />
           </div>
 
           <div className="flex">
-            <button className="flex-1 bg-[#212D5D] text-white p-2 rounded-lg">
+            <button className="flex-1 bg-[#212D5D] text-white p-2 rounded-lg hover:bg-[#1A254D] transition">
               إرسال
             </button>
           </div>

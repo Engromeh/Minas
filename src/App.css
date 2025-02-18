@@ -45,6 +45,7 @@ input {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  border: none !important;
 }
 .Container {
   background-color: rgb(255, 255, 255);
@@ -79,7 +80,8 @@ input {
 
   .box-show {
     margin-top: 80px;
-    margin-left: 24px;
+    margin-left: 31px;
+    width: 85%;
   }
   .form-book {
     height: 100%;
@@ -132,4 +134,74 @@ input {
   .icone-sidbar {
     width: 45px;
   }
+  .Passports-card{
+    margin-top: 7%;
+    margin-left: 9px;
+  }
+  .Deposit-Form 
+  {
+    width: 85%;
+    margin-left: 35px;
+  }
+  .titel-problem{
+    font-size: 25px !important;
+    font-weight: bold !important;
+  }
+  .Problems-Form {
+    width: 85%;
+    margin-left: 35px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .USER-INFO {
+    margin-left: 8%;
+    width: 400px;
+  }
+  .nav-bare {
+    width: 92%;
+    margin-left: 20px;
+  }
+  .image-member {
+    width: 70%;
+  }
+  .box-show,
+  .form-book {
+    width: 90%;
+    margin-left: 20px;
+  }
+  .offer-titel {
+    margin-left: 25%;
+  }
+  .offer-card {
+    width: 88%;
+    margin-left: 10px;
+  }
+  .bt-offer {
+    width: 60px;
+  }
+  .inbox-offer {
+    width: 320px;
+  }
+  .logo-member {
+    width: 35%;
+  }
+  .icone-sidbar {
+    width: 50px;
+  }
+  .titel-problem{
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+.label-form{
+  color: black;
+}
+.input-problem{
+  background-color: #F2F5FA;
+  color: #798494;
+}
+.titel-problem{
+  font-size: 40px;
+  font-weight: bold;
 }

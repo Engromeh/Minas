@@ -39,7 +39,7 @@ const DepositForm = () => {
       <h2 className="text-2xl md:text-3xl font-bold text-center mt-6">
         إيداع الأموال
       </h2>
-      <div className="max-w-2xl mx-auto p-6 bg-white shadow-md rounded-lg mt-4">
+      <div className="Deposit-Form max-w-2xl mx-auto p-6 bg-white shadow-md rounded-lg mt-4">
         <div className="flex flex-col md:flex-row justify-between items-center mb-4">
           <span className="text-[#003E78] text-lg md:text-xl font-bold">
             {methods[depositMethod].number}
