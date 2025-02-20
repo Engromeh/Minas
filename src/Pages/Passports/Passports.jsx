@@ -5,7 +5,7 @@ import line from "../../assets/Line 4.svg";
 const Passports = () => {
   return (
     <div className="container mx-auto px-4">
-      <div className="Passports-card bg-white shadow-lg rounded-lg p-6 w-full">
+      <div className="Passports-card bg-white shadow-lg rounded-lg p-6 w-full mt-2">
         {[...Array(3)].map((_, index) => (
           <React.Fragment key={index}>
             <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-center p-4">
@@ -37,7 +37,7 @@ const Passports = () => {
                     <p className="font-bold text-lg">NYC</p>
                     <p className="text-[#0084FF] text-xs sm:text-sm font-bold">22:30</p>
                   </div>
-                  <img src={flightgo} alt="Flight Go" className="w-16 sm:w-24 h-16 sm:h-24" />
+                  <img src={flightgo} alt="Flight Go" className="w-16 sm:w-24 h-16 sm:h-24 mr-6" />
                   <div className="flex flex-col items-end">
                     <p className="font-bold text-lg">CHS</p>
                     <p className="text-[#0084FF] text-xs sm:text-sm font-bold">23:45</p>

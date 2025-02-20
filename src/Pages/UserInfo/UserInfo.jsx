@@ -29,7 +29,7 @@ const UserInfo = () => {
       style={{ height: "100%", width: "auto"}}
     >
       <div className="flex justify-between items-center">
-        <h2 className="text-lg font-semibold">معلومات المستخدم</h2>
+        <h2 className=" font-semibold" style={{fontSize:"18px"}}>معلومات المستخدم</h2>
         <button className="p-2 bg-gray-100 rounded-full hover:bg-gray-200">
           <img src={notification} alt="Notification" />
         </button>
@@ -43,9 +43,9 @@ const UserInfo = () => {
               alt="User"
               className="w-32 h-32 rounded-full border-4 border-white shadow-md"
             />
-            <h2 className="text-lg font-semibold mt-3">{name}</h2>
+            <h2 className=" font-bold mt-3" style={{fontSize:"22px"}}>{name}</h2>
             <div className="flex items-center gap-2 mt-6">
-              <p className="text-gray-500 text-sm">{phone}</p>
+              <p className="text-gray-500 text-sm" style={{fontSize:"18px"}}>{phone}</p>
               <button
                 className="p-1 bg-gray-200 rounded-full hover:bg-gray-300 transition"
                 onClick={() => setShowForm(true)}
@@ -74,7 +74,7 @@ const UserInfo = () => {
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="mt-3 px-3 py-2 border rounded w-64"
+              className="name-uesr mt-3 px-3 py-2 border rounded w-64"
               placeholder="Enter Name"
             />
 
@@ -82,7 +82,7 @@ const UserInfo = () => {
               type="text"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              className="mt-2 px-3 py-2 border rounded w-64"
+              className="phone-uesr mt-2 px-3 py-2  w-64"
               placeholder="Enter Phone"
             />
 
@@ -103,7 +103,7 @@ const UserInfo = () => {
           </>
         )}
       </div>
-      <div className="flex justify-center my-3 mt-18">
+      <div className="flex justify-center my-3 ">
         <label className="relative inline-flex items-center cursor-pointer">
           <input
             type="checkbox"
@@ -157,22 +157,22 @@ const UserInfo = () => {
       <div className="mt-4 bg-gray-100 p-3 rounded-lg">
         <div className="flex">
           <button
-            className={`w-1/2 px-4 py-2 transition ${
+            className={`next-fight px-4 py-2 transition ${
               activeTab === "upcoming"
                 ? "bg-blue-900 text-white"
                 : "bg-gray-300 text-gray-700"
-            } rounded-l-md`}
+            } `}
             onClick={() => setActiveTab("upcoming")}
           >
             الرحلات القادمة
           </button>
 
           <button
-            className={`w-1/2 px-4 py-2 transition ${
+            className={`Previous-fight px-4 py-2 transition ${
               activeTab === "previous"
                 ? "bg-blue-900 text-white"
                 : "bg-gray-300 text-gray-700"
-            } rounded-r-md`}
+            } `}
             onClick={() => setActiveTab("previous")}
           >
             الرحلات السابقة
@@ -181,7 +181,7 @@ const UserInfo = () => {
         <div className="mt-3">
           <div className="border-b p-4 flex justify-between items-center">
             <div className="flex flex-col items-start">
-              <p className="text-gray-500 text-sm">Wed 13 Dec, 2023</p>
+              <p className="text-black-50 text-sm">Wed 13 Dec, 2023</p>
               <p className="font-bold">NYC</p>
               <p className="text-[#0084FF] text-sm font-bold">22:30</p>
             </div>
@@ -194,7 +194,7 @@ const UserInfo = () => {
           <img src={line} className="w-full my-2 opacity-40" alt="divider" />
           <div className="mt-2  flex justify-between items-center">
             <div className="flex flex-col items-start">
-              <p className="text-gray-500 text-sm">Fri 15 Dec, 2023</p>
+              <p className="text-black-50 text-sm">Fri 15 Dec, 2023</p>
               <p className="font-bold">CHS</p>
               <p className="text-[#0084FF] text-sm font-bold">08:30</p>
             </div>

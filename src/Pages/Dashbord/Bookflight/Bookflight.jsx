@@ -40,7 +40,7 @@ const Bookflight = () => {
               إلى
             </label>
             <div className="flex items-center rounded-lg px-3 py-2 bg-gray-100">
-              <FaPlaneDeparture className="text-gray-500 mr-2 rotate-180" />
+              <FaPlaneDeparture className="text-gray-500 mr-2 " />
               <input
                 id="to"
                 type="text"
@@ -59,11 +59,11 @@ const Bookflight = () => {
                 التاريخ
               </label>
               <div className="flex items-center rounded-lg px-3 py-2 bg-gray-100 relative">
-                <FaCalendarAlt className="text-gray-500 absolute 3" />
+                {/* <FaCalendarAlt className="text-gray-500 absolute 3" /> */}
                 <input
                   id="date"
                   type="date"
-                  className="bg-transparent flex-1 outline-none border-none appearance-none text-gray-700 font-semibold pl-10 pr-2 cursor-pointer"
+                  className="date-input bg-transparent flex-1 outline-none border-none  text-gray-700 font-semibold pl-10 pr-2 cursor-pointer"
                 />
               </div>
             </div>

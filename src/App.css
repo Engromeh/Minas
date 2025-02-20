@@ -33,13 +33,47 @@
     animation: logo-spin infinite 20s linear;
   }
 }
+.nav-bare{
+  border-radius: 20px;
+}
+.text-nav{
+  font-size:20px;
+  font-weight: bold;
+}
 
 .card {
   padding: 2em;
 }
+.statistics-number{
+font-size: 35px
+;}
+.statistics-prargraph{
+  font-size: 14px;
+}
+.Statistics-box{
+  border-radius: 23px;
+}
+.Previous-fight{
+  margin-left: 15px;
+  border-radius: 10px;
+}
 
+.next-fight
+{
+  width: 215px !important;
+  border-radius: 10px;
+
+}
 .read-the-docs {
   color: #888;
+}
+.search-input {
+
+  border: none !important;
+}
+.input-nav{
+  border: none !important;
+
 }
 input {
   appearance: none;
@@ -57,36 +91,38 @@ input {
 }
 @media (max-width: 768px) {
   .search-input {
-    margin-top: 30px;
+    margin-top: 21px;
+    border: none !important;
   }
   .member-special {
     padding: 6%;
+    width: 100%;
+    margin-left: -9px
   }
   .USER-INFO {
     margin-left: 12%;
     width: 352px;
   }
   .text-nav {
-    font-size: 20px;
+    font-size: 18px;
   }
   .nav-bare {
-    width: 89%;
-    margin-left: 25px;
+    width: 94%;
+    height: auto;
   }
   .image-member {
     margin-left: -8px;
-    width: 60%;
+    width: 55%;
   }
 
   .box-show {
-    margin-top: 80px;
-    margin-left: 31px;
-    width: 85%;
+    margin-top: 65px;
+    margin-left: -7px;
+    width: 100%;
   }
   .form-book {
-    height: 100%;
-    width: 85%;
-    margin-left: 30px;
+    width: 100%;
+    margin-left: -9px
   }
   .offer-titel {
     align-items: center;
@@ -120,8 +156,8 @@ input {
     margin-bottom: 70px;
   }
   .member-card {
-    width: 100%;
-    margin-left: 8px;
+    width: 286px;
+    margin-left: -12px
   }
   .num-id {
     font-size: 19px !important;
@@ -136,63 +172,28 @@ input {
   }
   .Passports-card{
     margin-top: 7%;
-    margin-left: 9px;
   }
   .Deposit-Form 
   {
-    width: 85%;
-    margin-left: 35px;
+    width: 100%;
+    margin-left: -6px;
   }
   .titel-problem{
     font-size: 25px !important;
     font-weight: bold !important;
   }
   .Problems-Form {
-    width: 85%;
-    margin-left: 35px;
+    width: 95%;
   }
+  .member-card2{
+    width: 290px;
+    margin-left: -14%;
 }
+  }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  .USER-INFO {
-    margin-left: 8%;
-    width: 400px;
-  }
-  .nav-bare {
-    width: 92%;
-    margin-left: 20px;
-  }
-  .image-member {
-    width: 70%;
-  }
-  .box-show,
-  .form-book {
-    width: 90%;
-    margin-left: 20px;
-  }
-  .offer-titel {
-    margin-left: 25%;
-  }
-  .offer-card {
-    width: 88%;
-    margin-left: 10px;
-  }
-  .bt-offer {
-    width: 60px;
-  }
-  .inbox-offer {
-    width: 320px;
-  }
-  .logo-member {
-    width: 35%;
-  }
-  .icone-sidbar {
-    width: 50px;
-  }
-  .titel-problem{
-    font-size: 25px;
-    font-weight: bold;
-  }
+
+.phone-uesr , .name-uesr{
+  border: 1px solid gray !important;
 }
 .label-form{
   color: black;
@@ -204,4 +205,11 @@ input {
 .titel-problem{
   font-size: 40px;
   font-weight: bold;
+}
+.date-input{
+
+    right: 41PX;
+    position: relative;
+  
+ 
 }

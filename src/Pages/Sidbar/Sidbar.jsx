@@ -31,7 +31,7 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 bg-[#212D5D] p-6 transition-all flex flex-col justify-between z-50 ${
+      className={`fixed top-0 left-0 bg-[#212D5D]  transition-all flex flex-col justify-between z-50 ${
         isOpen ? "w-64 h-full" : "w-20 h-screen"
       } ${isOpen && window.innerWidth <= 1024 ? "w-24 h-full" : ""}`}
     >
@@ -47,7 +47,7 @@ const Sidebar = () => {
       <div>
         <div className="icone-sidbar flex items-center gap-4">
           <div className="  w-16 h-16 rounded-full overflow-hidden">
-            <img src={logosidbar} alt="User" className=" w-full object-cover" />
+            <img src={logosidbar} alt="User" className=" w-full object-cover mt-2" />
           </div>
         </div>
 
@@ -77,7 +77,7 @@ const Sidebar = () => {
                 className="icone-sidbar flex items-center gap-3 p-3 text-white"
               >
                 <img src={icone3} alt="العضويات" className=" w-5 h-5" />
-                {isOpen && <span className="flex-1">العضويات</span>}
+                {isOpen && <span >العضويات</span>}
               </Link>
             </li>
             <li className="hover:bg-[#33BAE0] rounded-md transition-all">
@@ -86,7 +86,7 @@ const Sidebar = () => {
                 className="icone-sidbar flex items-center gap-3 p-3 text-white"
               >
                 <img src={icone4} alt="العروض" className=" w-5 h-5" />
-                {isOpen && <span className="flex-1">العروض</span>}
+                {isOpen && <span >العروض</span>}
               </Link>
             </li>
             <li className="hover:bg-[#33BAE0] rounded-md transition-all">
@@ -95,7 +95,7 @@ const Sidebar = () => {
                 className="icone-sidbar flex items-center gap-3 p-3 text-white"
               >
                 <img src={icone5} alt="مقترح او مشكلة" className=" w-5 h-5" />
-                {isOpen && <span className="flex-1">مقترح او مشكلة</span>}
+                {isOpen && <span >مقترح او مشكلة</span>}
               </Link>
             </li>
           </ul>
@@ -103,7 +103,7 @@ const Sidebar = () => {
       </div>
 
       <div className="flex flex-col gap-4">
-        <ul>
+        <ul className="mb-8" >
           <li className="hover:bg-[#33BAE0] rounded-md transition-all">
             <Link
               to="/login"
@@ -123,7 +123,7 @@ const Sidebar = () => {
               className="icone-sidbar flex gap-3 p-3 text-white"
             >
               <img src={icone7} alt="الدعم" className="icone-sidbar  w-5 h-5" />
-              {isOpen && <span className="flex-1">الدعم</span>}
+              {isOpen && <span >الدعم</span>}
             </Link>
           </li>
           <li className="hover:bg-[#33BAE0] rounded-md transition-all">
@@ -136,7 +136,7 @@ const Sidebar = () => {
                 alt="تسجيل الخروج"
                 className="icone-sidbar w-5 h-5"
               />
-              {isOpen && <span className="flex-1">تسجيل الخروج</span>}
+              {isOpen && <span >تسجيل الخروج</span>}
             </Link>
           </li>
         </ul>

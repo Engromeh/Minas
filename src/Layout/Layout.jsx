@@ -8,11 +8,11 @@ import { Outlet } from "react-router-dom";
 const Layout = () => {
   return (
     <div className="grid grid-cols-12 bg-[#F5F5F5] ">
-      <aside className="col-span-2 md:col-span-1 lg:col-span-2  min-h-screen">
+      <aside className="col-span-2 md:col-span-1 lg:col-span-1  min-h-screen">
         <Sidbar />
       </aside>
 
-      <div className="col-span-10 md:col-span-10 lg:col-span-7">
+      <div className="col-span-10 md:col-span-10 lg:col-span-8 " style={{marginLeft:"10%"}}>
         <Navbar />
         <Statistics />
         <Outlet />
