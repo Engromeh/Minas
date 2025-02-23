@@ -1,6 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ProblemsForm = () => {
+  const {email , setEmail}=useState("");
+    const [Massage, setMassage] = useState("");
+    const [TitelMassage, setTitelMassage] = useState("");
+      const [Name, setName] = useState("");
+    
+      const handleEmailChange = (e) => {
+        setEmail(e.target.value);
+      };
+    
+      const handleNameChange = (e) => {
+        setName(e.target.value);
+      };
+    
+      const handleTitleChange = (e) => {
+        setTitleMessage(e.target.value);
+      };
+    
+      const handleMessageChange = (e) => {
+        setMessage(e.target.value);
+      };
+
+  
   return (
     <div>
       <h2
@@ -20,6 +42,8 @@ const ProblemsForm = () => {
                   type="email"
                   placeholder="الايميل الخاص لك"
                   className="input-problem text-right text-sm rounded-lg   block w-full p-2.5 dark:bg-gray-800 dark:text-white  "
+                  onChange={handleEmailChange}
+                  value={email}
                 />
               </div>
             </div>
@@ -33,6 +57,8 @@ const ProblemsForm = () => {
                   type="text"
                   placeholder="اسمك بالكامل"
                   className="input-problem  text-right text-sm rounded-lg  block w-full p-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 "
+                  onChange={handleNameChange}
+                  value={Name}
                 />
               </div>
             </div>
@@ -47,6 +73,8 @@ const ProblemsForm = () => {
                 type="text"
                 placeholder="عنوان الرسالة"
                 className="input-problem text-right  text-sm rounded-lg  w-full p-2.5"
+                onChange={handleTitleChange}
+                value={TitelMassage}
               />
             </div>
           </div>
@@ -59,6 +87,8 @@ const ProblemsForm = () => {
               rows="4"
               placeholder="الرسالة"
               className="input-problem block p-2.5 w-full text-sm bg-white rounded-lg  text-right"
+              onChange={handleMessageChange}
+              value={Massage}
             />
           </div>
 

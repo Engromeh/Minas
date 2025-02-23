@@ -15,7 +15,12 @@ const DepositForm = () => {
   const [image, setImage] = useState(null);
   const [selectedLogo, setSelectedLogo] = useState(weLogo);
   const [selectednumber, setSelectednumber] = useState("01553456789");
+  const [Name, setName] = useState("");
 
+
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+  };
   const options = [
     {
       value: "Vodafone Cash",
@@ -104,6 +109,8 @@ const DepositForm = () => {
               type="text"
               placeholder="اسمك بالكامل"
               className="p-2 rounded-lg bg-gray-100 w-full text-right outline-none border-none"
+              value={Name}
+              onChange={handleNameChange}
             />
           </div>
 
