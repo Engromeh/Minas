@@ -28,13 +28,13 @@ const Login = () => {
       <div className="md:col-span-3 flex flex-col items-center justify-center mt-10 md:mt-0 h-full">
         <form
           className="max-w-sm mx-auto h-full mt-40 bg-cover bg-no-repeat bg-center"
-          style={{ backgroundImage: `url(${bgimage})` }}
         >
           <div className="mb-5">
             <p className="mt-5 text-4xl mb-3" style={{ color: "#1A4F83" }}>
               تسجيل الدخول
             </p>
-            <div className="relative mb-4">
+            <img src={loginphoto} alt="Logo" />
+            <div className="relative mt-4">
               <img
                 src={emailicon}
                 alt="Email Icon"
