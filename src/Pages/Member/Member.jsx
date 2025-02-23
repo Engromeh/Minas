@@ -10,18 +10,18 @@ import circle from "../../assets/circle member.svg";
 import checkIcon2 from "../../assets/checkicon2.svg";
 import checkIcon3 from "../../assets/checkicon3.svg";
 import circle2 from "../../assets/Ellipse white.svg";
-import logowhite from '../../assets/logowhite.svg';
-import whitememberlogo from '../../assets/whitememberlogo.svg'
+import logowhite from "../../assets/logowhite.svg";
+import whitememberlogo from "../../assets/whitememberlogo.svg";
 const cardsData = [
   {
     title: "العضوية الذهبية",
-    memberlogotop:memberlogotop,
+    memberlogotop: memberlogotop,
     bgColor: "#F3B858",
     textColor: "#03003E",
     sidebarImage: sidebarImage1,
     circleIcon: checkIcon,
-    checkIcon: circle ,
-    logo:logo ,
+    checkIcon: circle,
+    logo: logo,
 
     features: [
       "دعم VIP",
@@ -33,13 +33,13 @@ const cardsData = [
   },
   {
     title: "العضوية الفضية",
-    memberlogotop:memberlogotop,
+    memberlogotop: memberlogotop,
     bgColor: "#A4A4A4",
     textColor: "#000",
     sidebarImage: sidebarImage2,
     circleIcon: checkIcon2,
-    checkIcon: circle ,
-    logo:logo ,
+    checkIcon: circle,
+    logo: logo,
 
     features: [
       "دعم على مدار الساعة",
@@ -51,11 +51,11 @@ const cardsData = [
   },
   {
     title: "العضوية البلاتينية",
-    memberlogotop:whitememberlogo,
+    memberlogotop: whitememberlogo,
     bgColor: "#212D5E",
     textColor: "#FFF",
     sidebarImage: sidebarImage3,
-   logo:logowhite ,
+    logo: logowhite,
     circleIcon: checkIcon3,
     checkIcon: circle2,
     features: [
@@ -64,20 +64,18 @@ const cardsData = [
       "تدريبات متقدمة",
       "إمكانية تخصيص الواجهة",
       "إمكانية تخصيص الواجهة",
-    
     ],
   },
 ];
 
-
 const Member = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 p-6">
       {cardsData.map((card, index) => (
         <div
           key={index}
           className="member-card2 relative p-6 border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
-          style={{ backgroundColor: card.bgColor ,border:"none" }}
+          style={{ backgroundColor: card.bgColor, border: "none" }}
         >
           <img
             src={card.sidebarImage}
@@ -102,13 +100,17 @@ const Member = () => {
               className="flex items-center gap-2 mb-2 text-right relative z-10"
             >
               <div className="relative w-6 h-6">
-  <img src={card.checkIcon} alt="circle" className="w-full h-full" />
-  <img
-    src={ card.circleIcon}
-    alt="check"
-    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3 h-3"
-  />
-</div>
+                <img
+                  src={card.checkIcon}
+                  alt="circle"
+                  className="w-full h-full"
+                />
+                <img
+                  src={card.circleIcon}
+                  alt="check"
+                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3 h-3"
+                />
+              </div>
 
               <span
                 className="font-medium"
@@ -118,19 +120,26 @@ const Member = () => {
               </span>
             </div>
           ))}
-
-          <div className="flex gap-2 relative ">
+          <div className="flex gap-2 relative items-center">
             <a
               href="#"
               className="inline-flex items-center px-3 text-sm font-medium text-center rounded-lg border"
-              style={{ color: card.textColor, borderColor: card.textColor }}
+              style={{
+                color: card.textColor,
+                borderColor: card.textColor,
+                height: "50px",
+              }}
             >
               بادر الآن بالاشتراك
             </a>
             <a
               href="#"
               className="inline-flex items-center px-3 text-sm font-medium text-center rounded-lg border"
-              style={{ color: card.textColor, borderColor: card.textColor }}
+              style={{
+                color: card.textColor,
+                borderColor: card.textColor,
+                height: "50px",
+              }}
             >
               مشاهدة التفاصيل
               <svg
@@ -149,7 +158,11 @@ const Member = () => {
                 />
               </svg>
             </a>
-            <img src={memberlogobotom} alt="photo"  />
+
+            <div className="flex flex-col items-center">
+              <img src={memberlogobotom} alt="photo" className="img-member" />
+              <p className="lasttitel-member mt-2 text-sm  text-white">MINAS</p>
+            </div>
           </div>
         </div>
       ))}

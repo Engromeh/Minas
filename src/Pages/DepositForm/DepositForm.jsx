@@ -8,11 +8,41 @@ import OrangeLogo from "../../assets/Orange.svg";
 import logo from "../../assets/logo in form debosite.svg";
 import logocopy from "../../assets/coby.svg";
 import moneyIcon from "../../assets/amounticones.svg";
+import Select from "react-select";
 
 const DepositForm = () => {
-  const [depositMethod, setDepositMethod] = useState("vodafone");
   const [amount, setAmount] = useState("");
   const [image, setImage] = useState(null);
+  const [selectedLogo, setSelectedLogo] = useState(weLogo);
+  const [selectednumber, setSelectednumber] = useState("01553456789");
+
+  const options = [
+    {
+      value: "Vodafone Cash",
+      label: "Vodafone Cash",
+      icon: vodafoneCashLogo,
+      number: "01023456789",
+    },
+    {
+      value: "Bank Transfer",
+      label: "Bank Transfer",
+      icon: bankLogo,
+      number: "01123",
+    },
+    {
+      value: "Instapay",
+      label: "Instapay",
+      icon: instapayLogo,
+      number: "01123456789",
+    },
+    {
+      value: "Orange Cash",
+      label: "Orange Cash",
+      icon: OrangeLogo,
+      number: "012233346789",
+    },
+    { value: "We Pay", label: "We Pay", icon: weLogo, number: "01553456789" },
+  ];
 
   const handleImageUpload = (event) => {
     const file = event.target.files[0];
@@ -20,18 +50,19 @@ const DepositForm = () => {
       setImage(URL.createObjectURL(file));
     }
   };
-
-  const methods = {
-    vodafone: {
-      label: "فودافون كاش",
-      number: "01557899776",
-      logo: vodafoneCashLogo,
-    },
-    etisalat: {
-      label: "اتصالات كاش",
-      number: "01123456789",
-      logo: etisalatLogo,
-    },
+  const formatOptionLabel = ({ label, icon }) => (
+    <div style={{ display: "flex", alignItems: "center" }}>
+      <img
+        src={icon}
+        alt=""
+        style={{ width: "20px", height: "20px", marginRight: "10px" }}
+      />
+      {label}
+    </div>
+  );
+  const handleMethodChange = (selectedOption) => {
+    setSelectedLogo(selectedOption.icon);
+    setSelectednumber(selectedOption.number);
   };
 
   return (
@@ -42,7 +73,7 @@ const DepositForm = () => {
       <div className="Deposit-Form max-w-2xl mx-auto p-6 bg-white shadow-md rounded-lg mt-4">
         <div className="flex flex-col md:flex-row justify-between items-center mb-4">
           <span className="text-[#003E78] text-lg md:text-xl font-bold">
-            {methods[depositMethod].number}
+            {selectednumber}
           </span>
           <div className="flex items-center gap-2 md:mr-72">
             <span className="text-[#003E78] text-lg font-bold">انسخ الرقم</span>
@@ -51,24 +82,18 @@ const DepositForm = () => {
           <img src={logo} alt="Logo" className="h-16 md:h-20" />
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-4 ">
           <div>
             <label className="font-semibold text-right block mb-1">
               طريقة الإيداع
             </label>
-            <div className="flex items-center bg-gray-100 p-2 rounded-lg">
-              <select
-                className="bg-transparent flex-1 text-right appearance-none pr-8 outline-none border-none cursor-pointer"
-                onChange={(e) => setDepositMethod(e.target.value)}
-                value={depositMethod}
-              >
-                <option value="vodafone">فودافون كاش</option>
-                <option value="etisalat">اتصالات كاش</option>
-              </select>
-              <img
-                src={methods[depositMethod].logo}
-                alt="Method Logo"
-                className="h-6 w-6 ml-2 order-last"
+            <div className="bg-gray-100">
+              <Select
+                options={options}
+                onChange={handleMethodChange}
+                formatOptionLabel={formatOptionLabel}
+                isSearchable={false}
+                className="bg-gray-100"
               />
             </div>
           </div>
@@ -88,11 +113,14 @@ const DepositForm = () => {
             </label>
             <div className="flex items-center bg-gray-100 p-2 rounded-lg">
               <input
-                type="number"
+                type="text"
                 placeholder="المبلغ المراد إيداعه"
                 className="bg-transparent flex-1 text-right outline-none border-none pl-2"
                 value={amount}
-                onChange={(e) => setAmount(e.target.value)}
+                onChange={(e) => {
+                  const value = e.target.value.replace(/\D/g, "");
+                  setAmount(value);
+                }}
               />
               <img src={moneyIcon} alt="Money" className="h-6 w-6 ml-2" />
             </div>

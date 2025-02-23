@@ -33,47 +33,43 @@
     animation: logo-spin infinite 20s linear;
   }
 }
-.nav-bare{
+.nav-bare {
   border-radius: 20px;
 }
-.text-nav{
-  font-size:20px;
+.text-nav {
+  font-size: 20px;
   font-weight: bold;
 }
 
 .card {
   padding: 2em;
 }
-.statistics-number{
-font-size: 35px
-;}
-.statistics-prargraph{
+.statistics-number {
+  font-size: 35px;
+}
+.statistics-prargraph {
   font-size: 14px;
 }
-.Statistics-box{
+.Statistics-box {
   border-radius: 23px;
 }
-.Previous-fight{
+.Previous-fight {
   margin-left: 15px;
   border-radius: 10px;
 }
 
-.next-fight
-{
+.next-fight {
   width: 215px !important;
   border-radius: 10px;
-
 }
 .read-the-docs {
   color: #888;
 }
 .search-input {
-
   border: none !important;
 }
-.input-nav{
+.input-nav {
   border: none !important;
-
 }
 input {
   appearance: none;
@@ -97,7 +93,7 @@ input {
   .member-special {
     padding: 6%;
     width: 100%;
-    margin-left: -9px
+    margin-left: -9px;
   }
   .USER-INFO {
     margin-left: 12%;
@@ -122,15 +118,15 @@ input {
   }
   .form-book {
     width: 100%;
-    margin-left: -9px
+    margin-left: -9px;
   }
   .offer-titel {
     align-items: center;
     margin-left: 30%;
   }
   .offer-card {
-    width: 83%;
-    margin-left: 14px;
+    width: 34%;
+    margin-left: -16px;
   }
   .bt-offer {
     height: 50px;
@@ -144,7 +140,7 @@ input {
     margin-bottom: 35px;
   }
   .inbox-offer {
-    width: 300px;
+    width: 269px;
   }
   .box-center {
     margin-right: 10px;
@@ -157,7 +153,7 @@ input {
   }
   .member-card {
     width: 286px;
-    margin-left: -12px
+    margin-left: -12px;
   }
   .num-id {
     font-size: 19px !important;
@@ -169,47 +165,75 @@ input {
   }
   .icone-sidbar {
     width: 45px;
+    margin-left: 20px;
   }
-  .Passports-card{
+  .Passports-card {
     margin-top: 7%;
   }
-  .Deposit-Form 
-  {
+  .Deposit-Form {
     width: 100%;
     margin-left: -6px;
   }
-  .titel-problem{
+  .titel-problem {
     font-size: 25px !important;
     font-weight: bold !important;
   }
   .Problems-Form {
     width: 95%;
   }
-  .member-card2{
+  .member-card2 {
     width: 290px;
     margin-left: -14%;
-}
   }
+  .client-passpor {
+    width: 229px;
+    margin-left: -8%;
+  }
+  .img-member {
+    position: relative !important;
+    left: 21px !important;
+    top: 19px !important;
+    width: 50px !important;
+  }
+  .lasttitel-member {
+    position: relative !important;
+    left: 21px !important;
+    top: 11px !important;
+    width: 50px !important;
+  }
+}
+.passpoer-lastcard {
+  border: 1px dotted #ececec;
+}
 
-
-.phone-uesr , .name-uesr{
+.phone-uesr,
+.name-uesr {
   border: 1px solid gray !important;
 }
-.label-form{
+.label-form {
   color: black;
 }
-.input-problem{
-  background-color: #F2F5FA;
+.input-problem {
+  background-color: #f2f5fa;
   color: #798494;
 }
-.titel-problem{
+.titel-problem {
   font-size: 40px;
   font-weight: bold;
 }
-.date-input{
-
-    right: 41PX;
-    position: relative;
-  
- 
+.date-input {
+  right: 41px;
+  position: relative;
+}
+.img-member {
+  position: relative;
+  left: 127px;
+  top: 19px;
+  width: 50px;
+}
+.lasttitel-member {
+  position: relative;
+  left: 127px;
+  top: 11px;
+  width: 50px;
 }

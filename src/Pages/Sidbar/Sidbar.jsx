@@ -9,11 +9,11 @@ import icone6 from "../../assets/Dashbordicon6.svg";
 import icone7 from "../../assets/Dashbordicon7.svg";
 import icone8 from "../../assets/Dashbordicon8.svg";
 import { CaretLeft } from "@phosphor-icons/react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(window.innerWidth > 1024);
-
+  const location = useLocation();
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 1024) {
@@ -47,13 +47,21 @@ const Sidebar = () => {
       <div>
         <div className="icone-sidbar flex items-center gap-4">
           <div className="  w-16 h-16 rounded-full overflow-hidden">
-            <img src={logosidbar} alt="User" className=" w-full object-cover mt-2" />
+            <img
+              src={logosidbar}
+              alt="User"
+              className=" w-full object-cover mt-2"
+            />
           </div>
         </div>
 
         <nav className="mt-4">
           <ul className="space-y-2">
-            <li className="hover:bg-[#33BAE0] rounded-md transition-all">
+            <li
+              className={`hover:bg-[#33BAE0] rounded-md transition-all ${
+                location.pathname === "/Dashbord" ? "bg-[#33BAE0]" : ""
+              }`}
+            >
               <Link
                 to="/Dashbord"
                 className=" icone-sidbar flex items-center gap-3 p-3 text-white"
@@ -62,7 +70,11 @@ const Sidebar = () => {
                 {isOpen && <span>لوحة التحكم</span>}
               </Link>
             </li>
-            <li className="hover:bg-[#33BAE0] rounded-md transition-all">
+            <li
+              className={`hover:bg-[#33BAE0] rounded-md transition-all ${
+                location.pathname === "/Passport" ? "bg-[#33BAE0]" : ""
+              }`}
+            >
               <Link
                 to="/Passport"
                 className=" icone-sidbar flex items-center gap-3 p-3 text-white"
@@ -71,31 +83,56 @@ const Sidebar = () => {
                 {isOpen && <span>الحجوزات</span>}
               </Link>
             </li>
-            <li className="hover:bg-[#33BAE0] rounded-md transition-all">
+            <li
+              className={`hover:bg-[#33BAE0] rounded-md transition-all ${
+                location.pathname === "/Member" ? "bg-[#33BAE0]" : ""
+              }`}
+            >
+              <Link
+                to="/Member"
+                className="icone-sidbar flex items-center gap-3 p-3 text-white"
+              >
+                <img src={icone3} alt="العضويات" className=" w-5 h-5" />
+                {isOpen && <span>العضويات</span>}
+              </Link>
+            </li>
+            <li
+              className={`hover:bg-[#33BAE0] rounded-md transition-all ${
+                location.pathname === "/Deposit" ? "bg-[#33BAE0]" : ""
+              }`}
+            >
               <Link
                 to="/Deposit"
                 className="icone-sidbar flex items-center gap-3 p-3 text-white"
               >
-                <img src={icone3} alt="العضويات" className=" w-5 h-5" />
-                {isOpen && <span >العضويات</span>}
+                <img src={icone4} alt="ايداع الاموال" className=" w-5 h-5" />
+                {isOpen && <span>ايداع الاموال</span>}
               </Link>
             </li>
-            <li className="hover:bg-[#33BAE0] rounded-md transition-all">
+            <li
+              className={`hover:bg-[#33BAE0] rounded-md transition-all ${
+                location.pathname === "/Card" ? "bg-[#33BAE0]" : ""
+              }`}
+            >
               <Link
                 to="/card"
                 className="icone-sidbar flex items-center gap-3 p-3 text-white"
               >
                 <img src={icone4} alt="العروض" className=" w-5 h-5" />
-                {isOpen && <span >العروض</span>}
+                {isOpen && <span>العروض</span>}
               </Link>
             </li>
-            <li className="hover:bg-[#33BAE0] rounded-md transition-all">
+            <li
+              className={`hover:bg-[#33BAE0] rounded-md transition-all ${
+                location.pathname === "/Problem" ? "bg-[#33BAE0]" : ""
+              }`}
+            >
               <Link
                 to="/Problem"
                 className="icone-sidbar flex items-center gap-3 p-3 text-white"
               >
                 <img src={icone5} alt="مقترح او مشكلة" className=" w-5 h-5" />
-                {isOpen && <span >مقترح او مشكلة</span>}
+                {isOpen && <span>مقترح او مشكلة</span>}
               </Link>
             </li>
           </ul>
@@ -103,40 +140,44 @@ const Sidebar = () => {
       </div>
 
       <div className="flex flex-col gap-4">
-        <ul className="mb-8" >
-          <li className="hover:bg-[#33BAE0] rounded-md transition-all">
+        <ul className="mb-8">
+          <li
+            className={`hover:bg-[#33BAE0] rounded-md transition-all ${
+              location.pathname === "/login" ? "bg-[#33BAE0]" : ""
+            }`}
+          >
             <Link
               to="/login"
-              className="icone-sidbar flex gap-3 p-3 text-white"
+              className=" icone-sidbar flex gap-3 p-3 text-white"
             >
-              <img
-                src={icone6}
-                alt="عن ميناس"
-                className="icone-sidbar w-5 h-5"
-              />
+              <img src={icone6} alt="عن ميناس" className=" w-5 h-5" />
               {isOpen && <span>عن ميناس</span>}
             </Link>
           </li>
-          <li className="hover:bg-[#33BAE0] rounded-md transition-all">
+          <li
+            className={`hover:bg-[#33BAE0] rounded-md transition-all ${
+              location.pathname === "/login" ? "bg-[#33BAE0]" : ""
+            }`}
+          >
             <Link
               to="/login"
-              className="icone-sidbar flex gap-3 p-3 text-white"
+              className=" icone-sidbar flex gap-3 p-3 text-white"
             >
-              <img src={icone7} alt="الدعم" className="icone-sidbar  w-5 h-5" />
-              {isOpen && <span >الدعم</span>}
+              <img src={icone7} alt="الدعم" className="  w-5 h-5" />
+              {isOpen && <span>الدعم</span>}
             </Link>
           </li>
-          <li className="hover:bg-[#33BAE0] rounded-md transition-all">
+          <li
+            className={`hover:bg-[#33BAE0] rounded-md transition-all ${
+              location.pathname === "/login" ? "bg-[#33BAE0]" : ""
+            }`}
+          >
             <Link
               to="/login"
-              className="icone-sidbar flex gap-3 p-3 text-white"
+              className=" icone-sidbar flex gap-3 p-3 text-white"
             >
-              <img
-                src={icone8}
-                alt="تسجيل الخروج"
-                className="icone-sidbar w-5 h-5"
-              />
-              {isOpen && <span >تسجيل الخروج</span>}
+              <img src={icone8} alt="تسجيل الخروج" className=" w-5 h-5" />
+              {isOpen && <span>تسجيل الخروج</span>}
             </Link>
           </li>
         </ul>
