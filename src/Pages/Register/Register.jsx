@@ -34,7 +34,7 @@ const Register = () => {
           <form class="max-w-sm mx-auto h-full mt-40">
             <div class="mb-5">
               <img src={registerfromlogo} alt="Image" className="" />
-              <p className="mt-5 text-4xl mb-3" style={{ color: "#1A4F83" }}>
+              <p className="style-font mt-5 text-4xl mb-3" style={{ color: "#1A4F83" }}>
                 تسجيل مستخدم جديد
               </p>
               <div className="relative mb-4">
@@ -92,12 +92,12 @@ const Register = () => {
             </div>
             <button
               type="submit"
-              class="text-white font-bold  w-full h-10"
+              class="style-font text-white font-bold  w-full h-10"
               style={{ backgroundColor: "#212D5D", borderRadius: "5px" }}
             >
               تسجيل جديد{" "}
             </button>
-            <p className="text-end text-xl  mt-5" style={{ color: "#212D5D" }}>
+            <p className="style-font text-end text-xl  mt-5" style={{ color: "#212D5D" }}>
               {" "}
               تسجيل الدخول ؟
             </p>

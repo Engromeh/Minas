@@ -30,7 +30,7 @@ const Login = () => {
           className="max-w-sm mx-auto h-full mt-40 bg-cover bg-no-repeat bg-center"
         >
           <div className="mb-5">
-            <p className="mt-5 text-4xl mb-3" style={{ color: "#1A4F83" }}>
+            <p className="style-font mt-5 text-4xl mb-3" style={{ color: "#1A4F83" }}>
               تسجيل الدخول
             </p>
             <img src={loginphoto} alt="Logo" />
@@ -66,16 +66,16 @@ const Login = () => {
           </div>
           <button
             type="submit"
-            className="text-white font-bold w-full h-10"
+            className="style-font text-white font-bold w-full h-10"
             style={{ backgroundColor: "#212D5D", borderRadius: "5px" }}
           >
             تسجيل الدخول
           </button>
-          <p className="text-end text-xl mt-5" style={{ color: "#212D5D" }}>
+          <p className="style-font text-end text-xl mt-5" style={{ color: "#212D5D" }}>
             نسيت كلمة المرور؟
           </p>
           <div className="w-full bg-blue-100 text-center py-3 mt-60">
-            <p className="text-blue-900 font-medium">@minasagency.net</p>
+            <p className="style-font text-blue-900 font-medium">@minasagency.net</p>
           </div>
         </form>
       </div>

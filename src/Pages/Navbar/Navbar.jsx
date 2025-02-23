@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="nav-bare   bg-white  shadow-md w-full h-16 flex flex-col md:flex-row items-center justify-between p-2 space-y-2 md:space-y-0 mt-6">
       <div className="flex items-center space-x-3">
         <img src={hend} className="h-8" alt="Logo" />
-        <span className="text-nav   font-semibold dark:text-black">
+        <span className="text-nav   font-semibold dark:text-black" style={{fontFamily:"Cairo"}}>
           Hello! Mr. Hedra Naguib
         </span>
       </div>
@@ -16,6 +16,7 @@ const Navbar = () => {
           type="text"
           placeholder="رقم الرحلة"
           className="input-nav w-full md:w-64 ps-10 px-4 py-2  rounded-lg bg-[#F5F5F5]  text-[#939393] "
+          style={{ fontFamily:"Cairo"}}
         />
 
         <img

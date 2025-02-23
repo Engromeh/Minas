@@ -30,7 +30,7 @@ const Offers = () => {
 
   return (
     <>
-      <h2 className="offer-titel text-xl font-bold mb-4 text-left">العروض الحالية</h2>
+      <h2 className="offer-titel text-xl font-bold mb-4 text-left" style={{fontFamily:"Cairo"}}>العروض الحالية</h2>
       <div className="offer-card grid sm:grid-cols-1 md:grid-cols-2 gap-6">
         {repeatedFlights.map((flight, index) =>
           index % 2 === 0 ? (
@@ -46,7 +46,7 @@ const Offers = () => {
                     className="w-10 h-10"
                   />
 
-                  <div className="text-center">
+                  <div className="style-font text-center">
                     <p className="text-from text-lg font-semibold">{flight.from}</p>
                     <p className="text-blue-500 text-sm font-medium">
                       {flight.departure}
@@ -54,23 +54,23 @@ const Offers = () => {
                   </div>
 
                   <div className="box-center flex flex-col items-center text-gray-500">
-                    <p className="airinel-text  text-sm font-semibold">{flight.airline}</p>
-                    <p className="duration-text text-[#003E78] text-xs font-medium">
+                    <p className="style-font airinel-text  text-sm font-semibold">{flight.airline}</p>
+                    <p className="duration-text text-[#003E78] text-xs font-medium" style={{fontFamily:"Cairo"}}>
                       {flight.duration}
                     </p>
                     <p className="text-gray-400 text-xs">Non-Stop</p>
                   </div>
 
-                  <div className="text-center">
+                  <div className="style-font text-center">
                     <p className="text-too text-lg font-semibold">{flight.to}</p>
                     <p className="text-blue-500 text-sm font-medium">
                       {flight.arrival}
                     </p>
                   </div>
 
-                  <div className="text-right">
+                  <div className="style-font text-right">
                     <p className="text-lg font-bold">{flight.price}</p>
-                    <button className="bt-offer   bg-[#003E78] text-white text-sm px-4 py-1 rounded-lg mt-1">
+                    <button className="bt-offer   bg-[#003E78] text-white text-sm px-4 py-1 rounded-lg mt-1" >
                       Book Now
                     </button>
                   </div>
@@ -83,7 +83,7 @@ const Offers = () => {
                     className="w-10 h-10"
                   />
 
-                  <div className="text-center">
+                  <div className="style-font text-center">
                     <p className="text-from text-lg font-semibold">
                       {repeatedFlights[index + 1]?.from}
                     </p>
@@ -92,17 +92,17 @@ const Offers = () => {
                     </p>
                   </div>
 
-                  <div className="flex flex-col items-center text-gray-500">
+                  <div className="style-font flex flex-col items-center text-gray-500">
                     <p className="airinel-text text-sm font-semibold">
                       {repeatedFlights[index + 1]?.airline}
                     </p>
                     <p className="duration-text text-[#003E78] text-xs font-medium">
                       {repeatedFlights[index + 1]?.duration}
                     </p>
-                    <p className="text-gray-400 text-xs">Non-Stop</p>
+                    <p className="style-font text-gray-400 text-xs">Non-Stop</p>
                   </div>
 
-                  <div className="text-center">
+                  <div className="style-font text-center">
                     <p className="text-too text-lg font-semibold">
                       {repeatedFlights[index + 1]?.to}
                     </p>
@@ -115,7 +115,7 @@ const Offers = () => {
                     <p className="text-lg font-bold">
                       {repeatedFlights[index + 1]?.price}
                     </p>
-                    <button className=" bt-offer bg-[#003E78] text-white text-sm px-4 py-1 rounded-lg mt-1">
+                    <button className=" bt-offer bg-[#003E78] text-white text-sm px-4 py-1 rounded-lg mt-1" style={{fontFamily:"Cairo"}}>
                       Book Now
                     </button>
                   </div>

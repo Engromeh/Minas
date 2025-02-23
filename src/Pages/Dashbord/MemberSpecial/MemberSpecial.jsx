@@ -24,7 +24,7 @@ const MemberSpecial = () => {
           <div className="flex">
             <div className="flex relative z-10 mt-2">
               <h5
-                className="mb-2 text-2xl font-bold tracking-tight"
+                className="style-font mb-2 text-2xl font-bold tracking-tight"
                 style={{ color: card.textColor }}
               >
                 {card.title}
@@ -42,18 +42,18 @@ const MemberSpecial = () => {
           <div>
             <p
               className="num-id   text-left"
-              style={{ fontSize: "23px", color: "#1A4F83", fontWeight: "bold" }}
+              style={{ fontSize: "23px", color: "#1A4F83", fontWeight: "bold" , fontFamily:"Cairo"}}
             >
               ID 465646461614253132166
             </p>
           </div>
           <br />
-          <div className="flex justify-between items-center gap-4 flex-wrap">
+          <div className="style-font flex justify-between items-center gap-4 flex-wrap">
   <p className="text-[17px] text-[#87A2BE] font-bold">اسم المشتري</p>
   <p className="text-[17px] text-[#87A2BE] font-bold">تاريخ الصلاحية</p>
 </div>
 
-<div className="flex justify-between items-center gap-4 flex-wrap mt-2">
+<div className="style-font flex justify-between items-center gap-4 flex-wrap mt-2">
   <p className="text-[17px] text-[#1A4F83] font-bold">الرمح رقم واحد</p>
   <p className="text-[17px] text-[#1A4F83] font-bold">22/5/2025</p>
 </div>

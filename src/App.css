@@ -237,3 +237,6 @@ input {
   top: 11px;
   width: 50px;
 }
+.style-font{
+  font-family: cairo;
+}

@@ -8,7 +8,7 @@ const Statistics = () => {
   return (
     <div className="box-show grid grid-cols-2 xs:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
       <div className="Statistics-box bg-white p-4  shadow flex justify-between items-center" >
-        <div className="flex flex-col text-left">
+        <div className="style-font flex flex-col text-left">
           <h3 className="statistics-number font-bold text-[#09121E]" >45</h3>
           <p className="statistics-prargraph text-gray-500" >عدد الحجوزات</p>
         </div>
@@ -16,7 +16,7 @@ const Statistics = () => {
       </div>
 
       <div className="Statistics-box bg-white p-4 shadow flex justify-between items-center">
-        <div className="flex flex-col text-left">
+        <div className="style-font flex flex-col text-left">
           <h3 className="statistics-number font-bold text-[#09121E]">33</h3>
           <p className="statistics-prargraph text-gray-500">حجوزات متممة</p>
         </div>
@@ -24,7 +24,7 @@ const Statistics = () => {
       </div>
 
       <div className="Statistics-box bg-white p-4 shadow flex justify-between items-center">
-        <div className="flex flex-col text-left">
+        <div className="style-font flex flex-col text-left">
           <h3 className="statistics-number font-bold text-[#09121E]">12</h3>
           <p className="statistics-prargraph text-gray-500">الحجوزات الملغية</p>
         </div>
@@ -32,7 +32,7 @@ const Statistics = () => {
       </div>
 
       <div className="Statistics-box bg-white p-4  shadow flex justify-between items-center">
-        <div className="flex flex-col text-left">
+        <div className="style-font flex flex-col text-left">
           <h3 className="statistics-number font-bold text-[#09121E]">129</h3>
           <p className="statistics-prargraph text-gray-500">إجمالي المال</p>
         </div>

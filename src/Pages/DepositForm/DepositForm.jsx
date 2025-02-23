@@ -72,7 +72,7 @@ const DepositForm = () => {
 
   return (
     <>
-      <h2 className="text-2xl md:text-3xl font-bold text-center mt-6">
+      <h2 className="style-font text-2xl md:text-3xl font-bold text-center mt-6">
         إيداع الأموال
       </h2>
       <div className="Deposit-Form max-w-2xl mx-auto p-6 bg-white shadow-md rounded-lg mt-4">
@@ -81,7 +81,7 @@ const DepositForm = () => {
             {selectednumber}
           </span>
           <div className="flex items-center gap-2 md:mr-72">
-            <span className="text-[#003E78] text-lg font-bold">انسخ الرقم</span>
+            <span className="style-font text-[#003E78] text-lg font-bold">انسخ الرقم</span>
             <img src={logocopy} alt="نسخ" className="h-6 cursor-pointer" />
           </div>
           <img src={logo} alt="Logo" className="h-16 md:h-20" />
@@ -89,7 +89,7 @@ const DepositForm = () => {
 
         <div className="space-y-4 ">
           <div>
-            <label className="font-semibold text-right block mb-1">
+            <label className="style-font font-semibold text-right block mb-1">
               طريقة الإيداع
             </label>
             <div className="bg-gray-100">
@@ -104,7 +104,7 @@ const DepositForm = () => {
           </div>
 
           <div>
-            <label className="font-semibold text-right block mb-1">الاسم</label>
+            <label className="style-font font-semibold text-right block mb-1">الاسم</label>
             <input
               type="text"
               placeholder="اسمك بالكامل"
@@ -115,7 +115,7 @@ const DepositForm = () => {
           </div>
 
           <div>
-            <label className="font-semibold text-right block mb-1">
+            <label className="style-font font-semibold text-right block mb-1">
               الكمية
             </label>
             <div className="flex items-center bg-gray-100 p-2 rounded-lg">
@@ -134,7 +134,7 @@ const DepositForm = () => {
           </div>
 
           <div>
-            <label className="font-semibold text-right block mb-1">
+            <label className="style-font font-semibold text-right block mb-1">
               أرفق الصورة من الدفع
             </label>
             <label
@@ -148,7 +148,7 @@ const DepositForm = () => {
                   className="h-20 mt-2 rounded-lg object-cover"
                 />
               ) : (
-                <span>اضغط هنا لإرفاق الصورة</span>
+                <span className="style-font">اضغط هنا لإرفاق الصورة</span>
               )}
             </label>
             <input
@@ -160,7 +160,7 @@ const DepositForm = () => {
             />
           </div>
 
-          <div className="flex flex-col md:flex-row gap-4">
+          <div className="style-font flex flex-col md:flex-row gap-4">
             <button className="flex-1 bg-gray-300 p-2 rounded-lg">إلغاء</button>
             <button className="flex-1 bg-[#003E78] text-white p-2 rounded-lg">
               إرسال الطلب

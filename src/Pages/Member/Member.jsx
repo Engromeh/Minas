@@ -84,7 +84,7 @@ const Member = () => {
           />
           <img src={card.logo} alt="photo" className="mb-2 relative z-10" />
 
-          <div className="flex relative z-10">
+          <div className="style-font flex relative z-10">
             <h5
               className="mb-2 text-2xl font-bold tracking-tight"
               style={{ color: card.textColor }}
@@ -113,14 +113,14 @@ const Member = () => {
               </div>
 
               <span
-                className="font-medium"
+                className="style-font font-medium"
                 style={{ fontSize: "15px", color: card.textColor }}
               >
                 {feature}
               </span>
             </div>
           ))}
-          <div className="flex gap-2 relative items-center">
+          <div className="style-font flex gap-2 relative items-center">
             <a
               href="#"
               className="inline-flex items-center px-3 text-sm font-medium text-center rounded-lg border"
@@ -161,7 +161,7 @@ const Member = () => {
 
             <div className="flex flex-col items-center">
               <img src={memberlogobotom} alt="photo" className="img-member" />
-              <p className="lasttitel-member mt-2 text-sm  text-white">MINAS</p>
+              <p className="lasttitel-member mt-2 text-sm  text-white" style={{fontFamily:"Cairo"}}>MINAS</p>
             </div>
           </div>
         </div>

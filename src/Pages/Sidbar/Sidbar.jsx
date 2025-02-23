@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import logosidbar from "../../assets/sidbarLogo.svg";
 import icone1 from "../../assets/Dashbordicon.svg";
 import icone2 from "../../assets/Dashbordicon2.svg";
@@ -10,8 +10,11 @@ import icone7 from "../../assets/Dashbordicon7.svg";
 import icone8 from "../../assets/Dashbordicon8.svg";
 import { CaretLeft } from "@phosphor-icons/react";
 import { Link, useLocation } from "react-router-dom";
+import { UserContext } from "../../UserContext";
 
 const Sidebar = () => {
+  const { user } = useContext(UserContext);
+
   const [isOpen, setIsOpen] = useState(window.innerWidth > 1024);
   const location = useLocation();
   useEffect(() => {
@@ -57,6 +60,17 @@ const Sidebar = () => {
 
         <nav className="mt-4">
           <ul className="space-y-2">
+          <li       className={`hover:bg-[#33BAE0] rounded-md transition-all ${
+                location.pathname === "/Userinfo" ? "bg-[#33BAE0]" : ""
+              }`}>
+        <Link 
+        className="icone-sidbar flex items-center gap-4 ">
+          <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-white">
+            <img src={user.image || logosidbar} alt="User" className=" object-cover" />
+          </div>
+          {isOpen && <span className="style-font text-white text-lg font-bold" >{user.name}</span>}
+        </Link>
+      </li>
             <li
               className={`hover:bg-[#33BAE0] rounded-md transition-all ${
                 location.pathname === "/Dashbord" ? "bg-[#33BAE0]" : ""
@@ -67,7 +81,7 @@ const Sidebar = () => {
                 className=" icone-sidbar flex items-center gap-3 p-3 text-white"
               >
                 <img src={icone1} alt="لوحة التحكم" className=" w-5 h-5" />
-                {isOpen && <span>لوحة التحكم</span>}
+                {isOpen && <span className="style-font">لوحة التحكم</span>}
               </Link>
             </li>
             <li
@@ -80,7 +94,7 @@ const Sidebar = () => {
                 className=" icone-sidbar flex items-center gap-3 p-3 text-white"
               >
                 <img src={icone2} alt="الحجوزات" className=" w-5 h-5" />
-                {isOpen && <span>الحجوزات</span>}
+                {isOpen && <span className="style-font">الحجوزات</span>}
               </Link>
             </li>
             <li
@@ -93,7 +107,7 @@ const Sidebar = () => {
                 className="icone-sidbar flex items-center gap-3 p-3 text-white"
               >
                 <img src={icone3} alt="العضويات" className=" w-5 h-5" />
-                {isOpen && <span>العضويات</span>}
+                {isOpen && <span className="style-font">العضويات</span>}
               </Link>
             </li>
             <li
@@ -106,7 +120,7 @@ const Sidebar = () => {
                 className="icone-sidbar flex items-center gap-3 p-3 text-white"
               >
                 <img src={icone4} alt="ايداع الاموال" className=" w-5 h-5" />
-                {isOpen && <span>ايداع الاموال</span>}
+                {isOpen && <span className="style-font">ايداع الاموال</span>}
               </Link>
             </li>
             <li
@@ -119,7 +133,7 @@ const Sidebar = () => {
                 className="icone-sidbar flex items-center gap-3 p-3 text-white"
               >
                 <img src={icone4} alt="العروض" className=" w-5 h-5" />
-                {isOpen && <span>العروض</span>}
+                {isOpen && <span className="style-font">العروض</span>}
               </Link>
             </li>
             <li
@@ -132,7 +146,7 @@ const Sidebar = () => {
                 className="icone-sidbar flex items-center gap-3 p-3 text-white"
               >
                 <img src={icone5} alt="مقترح او مشكلة" className=" w-5 h-5" />
-                {isOpen && <span>مقترح او مشكلة</span>}
+                {isOpen && <span className="style-font">مقترح او مشكلة</span>}
               </Link>
             </li>
           </ul>
@@ -151,7 +165,7 @@ const Sidebar = () => {
               className=" icone-sidbar flex gap-3 p-3 text-white"
             >
               <img src={icone6} alt="عن ميناس" className=" w-5 h-5" />
-              {isOpen && <span>عن ميناس</span>}
+              {isOpen && <span className="style-font">عن ميناس</span>}
             </Link>
           </li>
           <li
@@ -164,7 +178,7 @@ const Sidebar = () => {
               className=" icone-sidbar flex gap-3 p-3 text-white"
             >
               <img src={icone7} alt="الدعم" className="  w-5 h-5" />
-              {isOpen && <span>الدعم</span>}
+              {isOpen && <span className="style-font">الدعم</span>}
             </Link>
           </li>
           <li
@@ -177,7 +191,7 @@ const Sidebar = () => {
               className=" icone-sidbar flex gap-3 p-3 text-white"
             >
               <img src={icone8} alt="تسجيل الخروج" className=" w-5 h-5" />
-              {isOpen && <span>تسجيل الخروج</span>}
+              {isOpen && <span className="style-font">تسجيل الخروج</span>}
             </Link>
           </li>
         </ul>

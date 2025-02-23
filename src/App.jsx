@@ -10,6 +10,7 @@ import Member from "./Pages/Member/Member";
 import ProblemsForm from "./Pages/ProblemsForm/ProblemsForm";
 import Dashbord from "./Pages/Dashbord/Dashbord";
 import Passports from "./Pages/Passports/Passports";
+import UserInfo from "./Pages/UserInfo/UserInfo";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
        <Route path="/Problem" element={<ProblemsForm/>} />
        <Route path="/Dashbord" element={<Dashbord/>} />
        <Route path="/Passport" element={<Passports/>} />
+       <Route path="/Userinfo" element={<UserInfo/>} />
 
 
         <Route path="/card" element={<Card />} />

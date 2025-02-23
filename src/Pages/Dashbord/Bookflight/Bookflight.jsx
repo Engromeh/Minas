@@ -20,7 +20,7 @@ const Bookflight = () => {
           <div>
             <label
               htmlFor="from"
-              className="block text-gray-600  text-left"
+              className="style-font block text-gray-600  text-left"
             >
               من
             </label>
@@ -36,7 +36,7 @@ const Bookflight = () => {
           </div>
 
           <div>
-            <label htmlFor="to" className="block text-gray-600 mb-1 text-left">
+            <label htmlFor="to" className="style-font block text-gray-600 mb-1 text-left">
               إلى
             </label>
             <div className="flex items-center rounded-lg px-3 py-2 bg-gray-100">
@@ -54,7 +54,7 @@ const Bookflight = () => {
             <div className="w-full md:w-1/2">
               <label
                 htmlFor="date"
-                className="block text-gray-600 mb-1 text-left"
+                className="style-font block text-gray-600 mb-1 text-left"
               >
                 التاريخ
               </label>
@@ -71,7 +71,7 @@ const Bookflight = () => {
             <div className="w-full md:w-1/2">
               <label
                 htmlFor="passengers"
-                className="block text-gray-600 mb-1 text-left"
+                className="style-font block text-gray-600 mb-1 text-left"
               >
                 عدد الركاب
               </label>
@@ -97,7 +97,7 @@ const Bookflight = () => {
           </div>
         </div>
 
-        <button className="w-full md:w-auto bg-blue-900 text-white py-2 px-6 rounded-lg font-bold hover:bg-blue-800 transition" style={{width:"100%"}}>
+        <button className="style-font w-full md:w-auto bg-blue-900 text-white py-2 px-6 rounded-lg font-bold hover:bg-blue-800 transition" style={{width:"100%"}}>
           البحث عن رحلة
         </button>
       </div>
