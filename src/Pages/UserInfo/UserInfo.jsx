@@ -6,7 +6,7 @@ import fightback from "../../assets/flightback.svg";
 import line from "../../assets/Line 4.svg";
 import { UserContext } from "../../UserContext";
 import { useContext } from "react";
-
+import romeh from "../../assets/Romeh.jpg"
 const UserInfo = () => {
   const { user, setUser } = useContext(UserContext);
 
@@ -14,8 +14,7 @@ const UserInfo = () => {
   const [showForm, setShowForm] = useState(false);
   const [name, setName] = useState("Hedra Naguib");
   const [phone, setPhone] = useState("+201551407492");
-  const [image, setImage] = useState(
-    "https://randomuser.me/api/portraits/men/45.jpg"
+  const [image, setImage] = useState(romeh
   );
   const [activeTab, setActiveTab] = useState("upcoming");
 
@@ -66,7 +65,7 @@ const UserInfo = () => {
 
 
             <div className="style-font flex gap-2 mt-3">
-              <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition" onClick={handleSave}>
+              <button className="bg-[#212D5D] text-white px-4 py-2 rounded transition" onClick={handleSave}>
                 حفظ
               </button>
               <button className="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-500 transition" onClick={() => setShowForm(false)}>

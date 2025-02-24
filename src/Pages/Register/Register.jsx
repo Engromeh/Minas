@@ -7,110 +7,104 @@ import registerfromlogo from "../../assets/registerformss.svg";
 
 const Register = () => {
   return (
-    <>
-      <div className="grid grid-cols-1 md:grid-cols-8 h-screen">
-        <div className="md:col-span-5 relative flex items-center justify-center">
-          <img
-            src={bgimagerehister}
-            alt="Background Image"
-            className="w-full h-full object-cover"
-          />
+    <div className="grid grid-cols-1 md:grid-cols-8 h-screen relative">
+      <div className="absolute inset-0 md:hidden">
+        <img
+          src={bgimagerehister}
+          alt="Background Image"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-[#212D5D] opacity-50"></div>
+      </div>
 
-          <div
-            className="absolute inset-0  opacity-50"
-            style={{ backgroundColor: "#212D5D" }}
-          ></div>
-
-          <div className="absolute inset-0 flex items-center justify-center">
-            <img
-              src={logo}
-              alt="Logo"
-              style={{ width: "50%", height: "50%" }}
-            />
-          </div>
-        </div>
-
-        <div className="md:col-span-3 flex flex-col items-center justify-center md:mt-0 h-full">
-          <form class="max-w-sm mx-auto h-full mt-40">
-            <div class="mb-5">
-              <img src={registerfromlogo} alt="Image" className="" />
-              <p className="style-font mt-5 text-4xl mb-3" style={{ color: "#1A4F83" }}>
-                تسجيل مستخدم جديد
-              </p>
-              <div className="relative mb-4">
-                <img
-                  src={emailicon}
-                  alt="Email Icon"
-                  className="absolute left-3 top-3 w-5 h-5"
-                />
-                <input
-                  type="email"
-                  placeholder="Type Email..."
-                  className="w-96 pl-10 pr-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 "
-                />
-              </div>
-            </div>
-            <div class="mb-5">
-              <div className="relative mb-6">
-                <img
-                  src={passwordicon}
-                  alt="Password Icon"
-                  className="absolute left-3 top-3 w-5 h-5"
-                />
-                <input
-                  type="password"
-                  placeholder="Type password..."
-                  className="w-96 pl-10 pr-10 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <button
-                  type="button"
-                  className="absolute right-3 top-3 w-6 h-6"
-                >
-                  <img src={Eyesicon} alt="Toggle Password" />
-                </button>
-              </div>
-            </div>
-            <div class="mb-5">
-              <div className="relative mb-6">
-                <img
-                  src={passwordicon}
-                  alt="Password Icon"
-                  className="absolute left-3 top-3 w-5 h-5"
-                />
-                <input
-                  type="password"
-                  placeholder="Type password..."
-                  className="w-96 pl-10 pr-10 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <button
-                  type="button"
-                  className="absolute right-3 top-3 w-6 h-6"
-                >
-                  <img src={Eyesicon} alt="Toggle Password" />
-                </button>
-              </div>
-            </div>
-            <button
-              type="submit"
-              class="style-font text-white font-bold  w-full h-10"
-              style={{ backgroundColor: "#212D5D", borderRadius: "5px" }}
-            >
-              تسجيل جديد{" "}
-            </button>
-            <p className="style-font text-end text-xl  mt-5" style={{ color: "#212D5D" }}>
-              {" "}
-              تسجيل الدخول ؟
-            </p>
-            <div
-              className=" bg-blue-100 text-center py-3 mt-60"
-              style={{ width: "100%" }}
-            >
-              <p className="text-blue-900 font-medium">@minasagency.net</p>
-            </div>
-          </form>
+      <div className="hidden md:flex md:col-span-5 relative items-center justify-center">
+        <img
+          src={bgimagerehister}
+          alt="Background Image"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 opacity-50 bg-[#212D5D]"></div>
+        <div className="hidden md:flex absolute inset-0 items-center justify-center">
+          <img src={logo} alt="Logo" className="w-1/2 h-1/2" />
         </div>
       </div>
-    </>
+
+      <div className="md:col-span-3 flex flex-col items-center justify-center h-full relative z-10">
+        <div className="block md:hidden text-center mb-5">
+          <img src={logo} alt="Logo" className="w-1/3 mx-auto" />
+        </div>
+
+        <form className="max-w-sm mx-auto bg-white p-8 rounded-lg shadow-lg w-[90%] md:w-auto">
+          <div className="text-center">
+            <img src={registerfromlogo} alt="Image" className="mx-auto" />
+            <p className="style-font mt-5 text-4xl mb-3" style={{ color: "#1A4F83" }}>
+              تسجيل مستخدم جديد
+            </p>
+          </div>
+
+          <div className="relative mt-5">
+            <img
+              src={emailicon}
+              alt="Email Icon"
+              className="absolute left-3 top-3 w-5 h-5"
+            />
+            <input
+              type="email"
+              placeholder="Type Email..."
+              className="w-full pl-10 pr-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+
+          <div className="relative mt-5">
+            <img
+              src={passwordicon}
+              alt="Password Icon"
+              className="absolute left-3 top-3 w-5 h-5"
+            />
+            <input
+              type="password"
+              placeholder="Type password..."
+              className="w-full pl-10 pr-10 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <button type="button" className="absolute right-3 top-3 w-6 h-6">
+              <img src={Eyesicon} alt="Toggle Password" />
+            </button>
+          </div>
+
+          <div className="relative mt-5">
+            <img
+              src={passwordicon}
+              alt="Password Icon"
+              className="absolute left-3 top-3 w-5 h-5"
+            />
+            <input
+              type="password"
+              placeholder="Confirm password..."
+              className="w-full pl-10 pr-10 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <button type="button" className="absolute right-3 top-3 w-6 h-6">
+              <img src={Eyesicon} alt="Toggle Password" />
+            </button>
+          </div>
+
+          <button
+            type="submit"
+            className="style-font text-white font-bold w-full h-10 mt-5"
+            style={{ backgroundColor: "#212D5D", borderRadius: "5px" }}
+          >
+            تسجيل جديد
+          </button>
+
+          <p className="style-font text-end text-xl mt-3" style={{ color: "#212D5D" }}>
+            تسجيل الدخول؟
+          </p>
+
+          <div className="text-center text-blue-900 font-medium mt-5">
+            <p>@minasagency.net</p>
+          </div>
+        </form>
+      </div>
+    </div>
   );
 };
 

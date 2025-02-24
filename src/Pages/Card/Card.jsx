@@ -31,7 +31,7 @@ const Card = () => {
 
   return (
     <>
-    <h2 className="offer-titel text-xl font-bold mb-4 text-left" style={{fontFamily:"Cairo"}}>العروض الحالية</h2>
+    <h2 className="offer-titel text-xl font-bold mb-4 mt-2 text-left" style={{fontFamily:"Cairo"}}>العروض </h2>
     <div className="offer-card grid sm:grid-cols-1 md:grid-cols-2 gap-6">
       {repeatedFlights.map((flight, index) =>
         index % 2 === 0 ? (

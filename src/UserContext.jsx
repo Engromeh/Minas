@@ -1,11 +1,11 @@
 import { createContext, useState } from "react";
-
+import romeh from "./assets/Romeh.jpg"
 export const UserContext = createContext();
 
 export const UserProvider = ({ children }) => {
   const [user, setUser] = useState({
     name: "Hedra Naguib",
-    image: "https://randomuser.me/api/portraits/men/45.jpg",
+    image: romeh ,
   });
 
   return (

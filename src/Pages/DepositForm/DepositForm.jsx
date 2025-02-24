@@ -161,10 +161,11 @@ const DepositForm = () => {
           </div>
 
           <div className="style-font flex flex-col md:flex-row gap-4">
-            <button className="flex-1 bg-gray-300 p-2 rounded-lg">إلغاء</button>
             <button className="flex-1 bg-[#003E78] text-white p-2 rounded-lg">
               إرسال الطلب
             </button>
+            <button className="flex-1 bg-gray-300 p-2 rounded-lg">إلغاء</button>
+
           </div>
         </div>
 
