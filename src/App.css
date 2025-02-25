@@ -105,6 +105,7 @@ input {
   .nav-bare {
     width: 94%;
     height: auto;
+    margin-left: -10px;
   }
   .image-member {
     margin-left: -8px;
@@ -113,12 +114,12 @@ input {
 
   .box-show {
     margin-top: 25px;
-    margin-left: -7px;
+    margin-left: -17px;
     width: 100%;
   }
   .form-book {
     width: 100%;
-    margin-left: -9px;
+    margin-left: -19px;
   }
   .offer-titel {
     align-items: center;
@@ -126,7 +127,7 @@ input {
   }
   .offer-card {
     width: 34%;
-    margin-left: -16px;
+    margin-left: -35px;
   }
   .bt-offer {
     height: 50px;
@@ -153,7 +154,7 @@ input {
   }
   .member-card {
     width: 286px;
-    margin-left: -12px;
+    margin-left: -34px;
   }
   .num-id {
     font-size: 19px !important;
@@ -170,11 +171,11 @@ input {
   .Passports-card {
     margin-top: 7%;
     width: 300px;
-    margin-left: -28px;
+    margin-left: -50px;
   }
   .Deposit-Form {
     width: 100%;
-    margin-left: -6px;
+    margin-left: -20px;
   }
   .titel-problem {
     font-size: 25px !important;
@@ -182,10 +183,16 @@ input {
   }
   .Problems-Form {
     width: 95%;
+    margin-left: -5%;
+
+  }
+  .romeh-photo{
+    width:100% ;
+    height: 100%;
   }
   .member-card2 {
     width: 290px;
-    margin-left: -14%;
+    margin-left: -24%;
   }
   .client-passpor {
     width: 229px;
@@ -229,13 +236,13 @@ input {
 }
 .img-member {
   position: relative;
-  left: 127px;
+  left: 17px;
   top: 19px;
   width: 50px;
 }
 .lasttitel-member {
   position: relative;
-  left: 127px;
+  left: 17px;
   top: 11px;
   width: 50px;
 }

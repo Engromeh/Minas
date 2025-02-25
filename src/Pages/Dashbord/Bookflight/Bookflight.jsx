@@ -59,7 +59,6 @@ const Bookflight = () => {
                 التاريخ
               </label>
               <div className="flex items-center rounded-lg px-3 py-2 bg-gray-100 relative">
-                {/* <FaCalendarAlt className="text-gray-500 absolute 3" /> */}
                 <input
                   id="date"
                   type="date"

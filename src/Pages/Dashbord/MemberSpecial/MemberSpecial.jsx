@@ -64,7 +64,7 @@ const MemberSpecial = () => {
 
           <div className=" flex mt-10">
             <img src={QR} alt="rr" className="qr-member mb-6" />
-            <img src={QR2} alt="rr" className="image-member ml-14 " />
+            <img src={QR2} alt="rr" className="image-member  " />
           </div>
         </div>
       ))}

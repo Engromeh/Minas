@@ -3,7 +3,7 @@ import hend from "../../assets/handinnav bar.svg";
 import search from "../../assets/search.svg";
 const Navbar = () => {
   return (
-    <nav className="nav-bare   bg-white  shadow-md w-full h-16 flex flex-col md:flex-row items-center justify-between p-2 space-y-2 md:space-y-0 mt-6">
+    <nav className="nav-bare    shadow-md w-full h-16 flex flex-col md:flex-row items-center justify-between p-2 space-y-2 md:space-y-0 mt-6">
       <div className="flex items-center space-x-3">
         <img src={hend} className="h-8" alt="Logo" />
         <span className="text-nav   font-semibold dark:text-black" style={{fontFamily:"Cairo"}}>

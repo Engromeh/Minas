@@ -66,7 +66,7 @@ const Sidebar = () => {
         <Link 
         className="icone-sidbar flex items-center gap-4 ">
           <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-white">
-            <img src={user.image || logosidbar} alt="User" className=" object-cover" />
+            <img src={user.image || logosidbar} alt="User" className="romeh-photo object-cover" />
           </div>
           {isOpen && <span className="style-font text-white text-lg font-bold" >{user.name}</span>}
         </Link>

@@ -12,7 +12,7 @@ const Layout = () => {
         <Sidbar />
       </aside>
 
-      <div className="col-span-10 md:col-span-10 lg:col-span-8 " style={{marginLeft:"10%"}}>
+      <div className="col-span-10 md:col-span-10 lg:col-span-8 " style={{marginLeft:"17%"}}>
         <Navbar />
         <Statistics />
         <Outlet />

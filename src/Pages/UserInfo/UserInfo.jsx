@@ -36,10 +36,11 @@ const UserInfo = () => {
       style={{ height: "100%", width: "auto"}}
     >
       <div className="flex justify-between items-center">
-        <h2 className=" style-font font-semibold" style={{fontSize:"18px"}}>معلومات المستخدم</h2>
         <button className="p-2 bg-gray-100 rounded-full hover:bg-gray-200">
           <img src={notification} alt="Notification" />
         </button>
+        <h2 className=" style-font font-semibold" style={{fontSize:"18px"}}>معلومات المستخدم</h2>
+
       </div>
 
       <div className="style-font flex flex-col items-center mt-4">
