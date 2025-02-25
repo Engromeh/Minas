@@ -32,7 +32,7 @@ const UserInfo = () => {
   };
   return (
     <div
-      className=" USER-INFO bg-white shadow-md rounded-lg p-4 w-full  flex flex-col justify-between"
+      className=" USER-INFO bg-white shadow-md rounded-lg p-4 w-full  flex flex-col justify-between" 
       style={{ height: "100%", width: "auto"}}
     >
       <div className="flex justify-between items-center">

@@ -249,3 +249,6 @@ input {
 .style-font{
   font-family: cairo;
 }
+.image-member{
+  width: 60%;
+}
