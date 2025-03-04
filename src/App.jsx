@@ -11,6 +11,8 @@ import ProblemsForm from "./Pages/ProblemsForm/ProblemsForm";
 import Dashbord from "./Pages/Dashbord/Dashbord";
 import Passports from "./Pages/Passports/Passports";
 import UserInfo from "./Pages/UserInfo/UserInfo";
+import NotificationsPage from "./Pages/notifications/NotificationsPage";
+import Transactions from "./Pages/Transactions/Transactions";
 
 function App() {
   return (
@@ -25,6 +27,10 @@ function App() {
        <Route path="/Dashbord" element={<Dashbord/>} />
        <Route path="/Passport" element={<Passports/>} />
        <Route path="/Userinfo" element={<UserInfo/>} />
+       <Route path="/notification" element={<NotificationsPage/>} />
+       <Route path="/Transactions" element={<Transactions/>} />
+
+
 
 
         <Route path="/card" element={<Card />} />

@@ -54,13 +54,15 @@
   border-radius: 23px;
 }
 .Previous-fight {
-  margin-left: 15px;
-  border-radius: 10px;
+  margin-left: 4px;
+    border-radius: 10px;
+    height: 50px;
 }
 
 .next-fight {
-  width: 215px !important;
+  width: 138px !important;
   border-radius: 10px;
+  height: 50px;
 }
 .read-the-docs {
   color: #888;
@@ -209,6 +211,14 @@ input {
     left: 21px !important;
     top: 11px !important;
     width: 50px !important;
+  }
+  .notification-card{
+    width: 300px;
+    margin-left: -49px;
+
+  }
+  .tital-transport{
+    margin-left: 40px;
   }
 }
 .passpoer-lastcard {
