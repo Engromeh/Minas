@@ -61,7 +61,7 @@ const Sidebar = () => {
           </div>
         </div>
 
-        <nav className="mt-3">
+        <nav className="mt-3 pl-2">
           <ul className="space-y-2">
             <li
               className={`hover:bg-[#33BAE0] rounded-md transition-all ${
@@ -200,7 +200,7 @@ const Sidebar = () => {
         </nav>
       </div>
 
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 pl-2">
         <ul>
           <li
             className={`hover:bg-[#33BAE0] rounded-md transition-all ${
