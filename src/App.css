@@ -6,6 +6,8 @@
   max-height: 90%;
 }
 
+
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -56,13 +58,13 @@
 .Previous-fight {
   margin-left: 4px;
     border-radius: 10px;
-    height: 50px;
+    height: 60px;
 }
 
 .next-fight {
   width: 138px !important;
   border-radius: 10px;
-  height: 50px;
+  height: 60px;
 }
 .read-the-docs {
   color: #888;
@@ -98,11 +100,22 @@ input {
     margin-left: -9px;
   }
   .USER-INFO {
-    margin-left: 12%;
+    margin-left: 14%;
     width: 352px;
   }
   .text-nav {
     font-size: 18px;
+  }
+  .Previous-fight {
+    margin-left: 4px;
+      border-radius: 10px;
+      height: 60px;
+  }
+  
+  .next-fight {
+    width: 138px !important;
+    border-radius: 10px;
+    height: 60px;
   }
   .nav-bare {
     width: 94%;
@@ -241,8 +254,9 @@ input {
   font-weight: bold;
 }
 .date-input {
-  right: 41px;
+  right: 47px;
   position: relative;
+  font-size: 8px;
 }
 .img-member {
   position: relative;
@@ -260,5 +274,5 @@ input {
   font-family: cairo;
 }
 .image-member{
-  width: 60%;
+  width: 50%;
 }

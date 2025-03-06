@@ -42,7 +42,7 @@ const MemberSpecial = () => {
           <div>
             <p
               className="num-id   text-left"
-              style={{ fontSize: "23px", color: "#1A4F83", fontWeight: "bold" , fontFamily:"Cairo"}}
+              style={{ fontSize: "20px", color: "#1A4F83", fontWeight: "bold" , fontFamily:"Cairo"}}
             >
               ID 465646461614253132166
             </p>

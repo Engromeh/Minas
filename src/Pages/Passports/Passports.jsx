@@ -9,7 +9,7 @@ const Passports = () => {
         {[...Array(3)].map((_, index) => (
           <React.Fragment key={index}>
             <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-center p-4">
-              <div className="md:col-span-7 p-4 rounded-lg">
+              <div className="md:col-span-6 p-4 rounded-lg">
                 <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
                   <div className="client-passport flex flex-col bg-[#6BDBFF2B] sm:col-span-3 p-4 sm:p-6 rounded-[20px]">
                     {[...Array(3)].map((_, i) => (
@@ -46,7 +46,7 @@ const Passports = () => {
                 </div>
               </div>
 
-              <div className="passpoer-lastcard md:col-span-5 bg-white p-2 rounded-lg">
+              <div className="passpoer-lastcard md:col-span-6 bg-white p-2 rounded-lg">
                 <div className="p-2 bg-[#6BDBFF2B] rounded-[20px] flex flex-wrap sm:flex-nowrap justify-between items-center">
                   <div className="style-font flex flex-col items-start">
                     <p className="text-black text-xs sm:text-sm">

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import bookfight from "../../../assets/bookfight.svg";
 import { FaPlaneDeparture, FaUser, FaCalendarAlt } from "react-icons/fa";
+import flight from "../../../assets/flight222.svg"
 
 const Bookflight = () => {
   const [passengers, setPassengers] = useState(1);
@@ -25,7 +26,7 @@ const Bookflight = () => {
               من
             </label>
             <div className="flex items-center rounded-lg px-3 py-2 bg-gray-100">
-              <FaPlaneDeparture className="text-gray-500 mr-2" />
+            <img src={flight} alt="sss" className="mr-2" />
               <input
                 id="from"
                 type="text"
@@ -40,7 +41,7 @@ const Bookflight = () => {
               إلى
             </label>
             <div className="flex items-center rounded-lg px-3 py-2 bg-gray-100">
-              <FaPlaneDeparture className="text-gray-500 mr-2 " />
+            <img src={flight} alt="sss" className="mr-2" />
               <input
                 id="to"
                 type="text"
@@ -58,7 +59,7 @@ const Bookflight = () => {
               >
                 التاريخ
               </label>
-              <div className="flex items-center rounded-lg px-3 py-2 bg-gray-100 relative">
+              <div className="flex items-center rounded-lg px-3 py-2 bg-gray-100 relative" style={{height:"30px"}}>
                 <input
                   id="date"
                   type="date"
@@ -74,10 +75,10 @@ const Bookflight = () => {
               >
                 عدد الركاب
               </label>
-              <div className="flex items-center rounded-lg px-3 py-2 bg-gray-100">
+              <div className="flex items-center rounded-lg px-3 py-2 bg-gray-100" style={{height:"30px"}}>
                 <FaUser className="text-gray-500 mr-2" />
                 <button
-                  className="px-2 text-lg bg-white outline-none border-none"
+                  className="text-lg  outline-none border-none"
                   onClick={() => setPassengers((prev) => Math.max(1, prev - 1))}
                 >
                   -
@@ -86,7 +87,7 @@ const Bookflight = () => {
                   {passengers}
                 </span>
                 <button
-                  className="px-2 text-lg bg-white outline-none border-none"
+                  className=" text-lg  outline-none border-none"
                   onClick={() => setPassengers((prev) => prev + 1)}
                 >
                   +

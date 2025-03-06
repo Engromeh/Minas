@@ -51,8 +51,8 @@ const Sidebar = () => {
       </button>
 
       <div>
-        <div className="icone-sidbar flex items-center gap-4">
-          <div className="  w-16 h-16 rounded-full overflow-hidden">
+        <div className="icone-sidbar flex items-center gap-2">
+          <div className="  w-12 h-12 rounded-full overflow-hidden">
             <img
               src={logosidbar}
               alt="User"
@@ -90,7 +90,7 @@ const Sidebar = () => {
             >
               <Link
                 to="/Dashbord"
-                className=" icone-sidbar flex items-center gap-3 p-2 text-white"
+                className=" icone-sidbar flex items-center gap-3  pl-2 pb-2 text-white"
               >
                 <img src={icone1} alt="لوحة التحكم" className=" w-5 h-5" />
                 {isOpen && <span className="style-font">لوحة التحكم</span>}
@@ -103,7 +103,7 @@ const Sidebar = () => {
             >
               <Link
                 to="/Passport"
-                className=" icone-sidbar flex items-center gap-3 p-2 text-white"
+                className=" icone-sidbar flex items-center gap-3 pl-2 pb-2 text-white"
               >
                 <img src={icone2} alt="الحجوزات" className=" w-5 h-5" />
                 {isOpen && <span className="style-font">الحجوزات</span>}
@@ -116,7 +116,7 @@ const Sidebar = () => {
             >
               <Link
                 to="/Member"
-                className="icone-sidbar flex items-center gap-3 p-2 text-white"
+                className="icone-sidbar flex items-center gap-3 pl-2 pb-2 text-white"
               >
                 <img src={icone3} alt="العضويات" className=" w-5 h-5" />
                 {isOpen && <span className="style-font">العضويات</span>}
@@ -129,7 +129,7 @@ const Sidebar = () => {
             >
               <Link
                 to="/card"
-                className="icone-sidbar flex items-center gap-3 p-2 text-white"
+                className="icone-sidbar flex items-center gap-3 pl-2 pb-2  text-white"
               >
                 <img src={icone4} alt="العروض" className=" w-5 h-5" />
                 {isOpen && <span className="style-font">العروض</span>}
@@ -142,7 +142,7 @@ const Sidebar = () => {
             >
               <Link
                 to="/Deposit"
-                className="icone-sidbar flex items-center gap-3 p-2 text-white"
+                className="icone-sidbar flex items-center gap-3 pl-2 pb-2 text-white"
               >
                 <img
                   src={depositbar}
@@ -160,7 +160,7 @@ const Sidebar = () => {
             >
               <Link
                 to="/Transactions"
-                className="icone-sidbar flex items-center gap-3 p-2 text-white"
+                className="icone-sidbar flex items-center gap-3 pl-2 pb-2 text-white"
               >
                 <img src={icone9} alt="مقترح او مشكلة" className=" w-5 h-5" />
                 {isOpen && <span className="style-font">سجل المعاملات</span>}
@@ -190,7 +190,7 @@ const Sidebar = () => {
             >
               <Link
                 to="/Problem"
-                className="icone-sidbar flex items-center gap-2 p-2 text-white"
+                className="icone-sidbar flex items-center gap-2 pl-2 pb-2  text-white"
               >
                 <img src={icone5} alt="مقترح او مشكلة" className=" w-5 h-5" />
                 {isOpen && <span className="style-font">مقترح او مشكلة</span>}
@@ -209,7 +209,7 @@ const Sidebar = () => {
           >
             <Link
               to="/login"
-              className=" icone-sidbar flex gap-3 p-3 text-white"
+              className=" icone-sidbar flex gap-3 pl-2 pb-1 text-white"
             >
               <img src={icone6} alt="عن ميناس" className=" w-5 h-5" />
               {isOpen && <span className="style-font">عن ميناس</span>}
@@ -222,7 +222,7 @@ const Sidebar = () => {
           >
             <Link
               to="/login"
-              className=" icone-sidbar flex gap-3 p-3 text-white"
+              className=" icone-sidbar flex gap-3 pl-2 pb-1 text-white"
             >
               <img src={icone7} alt="الدعم" className="  w-5 h-5" />
               {isOpen && <span className="style-font">الدعم</span>}
@@ -235,7 +235,7 @@ const Sidebar = () => {
           >
             <Link
               to="/login"
-              className=" icone-sidbar flex gap-3 p-3 text-white"
+              className=" icone-sidbar flex gap-3 pl-2 pb-1  text-white"
             >
               <img src={icone8} alt="تسجيل الخروج" className=" w-5 h-5" />
               {isOpen && <span className="style-font">تسجيل الخروج</span>}

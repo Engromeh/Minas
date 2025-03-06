@@ -31,12 +31,12 @@ const Offers = () => {
   return (
     <>
       <h2 className="offer-titel text-xl font-bold mb-4 text-left" style={{fontFamily:"Cairo"}}>العروض الحالية</h2>
-      <div className="offer-card grid sm:grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="offer-card grid sm:grid-cols-1 md:grid-cols-2 gap-1" style={{width:"680px"}} >
         {repeatedFlights.map((flight, index) =>
           index % 2 === 0 ? (
             <div
               key={index}
-              className="bg-white p-4 rounded-2xl shadow-md border border-gray-200"
+              className="bg-white p-1 rounded-2xl shadow-md border border-gray-200"
             >
               <div className="flex flex-col divide-y divide-dashed divide-gray-300">
                 <div className="inbox-offer  flex items-center justify-between p-4">
@@ -70,7 +70,7 @@ const Offers = () => {
 
                   <div className="style-font text-right">
                     <p className="text-lg font-bold">{flight.price}</p>
-                    <button className="bt-offer   bg-[#003E78] text-white text-sm px-4 py-1 rounded-lg mt-1" >
+                    <button className="bt-offer   bg-[#003E78] text-white text-sm px-2 py-1 rounded-lg mt-1" >
                       Book Now
                     </button>
                   </div>

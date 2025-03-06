@@ -153,8 +153,8 @@ const UserInfo = () => {
             الرحلات السابقة
           </button>
         </div>
-        <div className="mt-3">
-          <div className="border-b p-4 flex justify-between items-center">
+        <div>
+          <div className="border-b p-1 flex justify-between items-center">
             <div className="flex flex-col items-start">
               <p className="style-font text-black-50 text-sm">Wed 13 Dec, 2023</p>
               <p className="font-bold">NYC</p>
