@@ -71,7 +71,7 @@ const Card = () => {
 
                 <div className="style-font text-right">
                   <p className="text-lg font-bold">{flight.price}</p>
-                  <button className="bt-offer   bg-[#003E78] text-white text-sm px-4 py-1 rounded-lg mt-1">
+                  <button className="bt-offer   bg-[#003E78] text-white text-sm px-2 py-1 rounded-lg mt-1">
                     Book Now
                   </button>
                 </div>
@@ -116,7 +116,7 @@ const Card = () => {
                   <p className="text-lg font-bold">
                     {repeatedFlights[index + 1]?.price}
                   </p>
-                  <button className=" bt-offer bg-[#003E78] text-white text-sm px-4 py-1 rounded-lg mt-1">
+                  <button className=" bt-offer bg-[#003E78] text-white text-sm px-2 py-1 rounded-lg mt-1">
                     Book Now
                   </button>
                 </div>

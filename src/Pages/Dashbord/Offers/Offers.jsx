@@ -115,7 +115,7 @@ const Offers = () => {
                     <p className="text-lg font-bold">
                       {repeatedFlights[index + 1]?.price}
                     </p>
-                    <button className=" bt-offer bg-[#003E78] text-white text-sm px-4 py-1 rounded-lg mt-1" style={{fontFamily:"Cairo"}}>
+                    <button className=" bt-offer bg-[#003E78] text-white text-sm px-2 py-1 rounded-lg mt-1" style={{fontFamily:"Cairo"}}>
                       Book Now
                     </button>
                   </div>
